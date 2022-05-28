@@ -4,4 +4,4 @@
 
 
 ## .urdf files
-[repo git](https://github.com/cyberbotics/urdf2webots.git)
+[repo git](https://github.com/cyberbotics/webots.git)
