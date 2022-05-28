@@ -1,3 +1,0 @@
-[console_scripts]
-controller = assignment_pkg.controller:main
-
