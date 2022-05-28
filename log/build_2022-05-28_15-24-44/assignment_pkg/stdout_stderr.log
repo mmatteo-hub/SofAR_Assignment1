@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/assignment_pkg/assignment_pkg.egg-info
+writing ../../build/assignment_pkg/assignment_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/assignment_pkg/assignment_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/assignment_pkg/assignment_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/assignment_pkg/assignment_pkg.egg-info/requires.txt
+writing top-level names to ../../build/assignment_pkg/assignment_pkg.egg-info/top_level.txt
+writing manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib/assignment_pkg
+copying assignment_pkg/__init__.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib/assignment_pkg
+copying assignment_pkg/controller.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib/assignment_pkg
+running install
+running install_lib
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg
+copying /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib/assignment_pkg/__init__.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg
+copying /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build/lib/assignment_pkg/controller.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg
+byte-compiling /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg/controller.py to controller.cpython-38.pyc
+running install_data
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/ament_index
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/ament_index/resource_index
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/ament_index/resource_index/packages
+copying resource/assignment_pkg -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/assignment_pkg
+running install_egg_info
+Copying ../../build/assignment_pkg/assignment_pkg.egg-info to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+Installing controller script to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/assignment_pkg
+writing list of installed files to '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log'
