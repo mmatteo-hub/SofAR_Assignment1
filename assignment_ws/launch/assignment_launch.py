@@ -11,7 +11,7 @@ def generate_launch_description():
     robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'tiago_robot.urdf')).read_text()
 
     webots = WebotsLauncher(
-        world=os.path.join(package_dir, 'worlds', 'world.wbt')
+        world=os.path.join(package_dir, 'worlds', 'factory.wbt')
     )
 
     my_robot_driver = Node(
