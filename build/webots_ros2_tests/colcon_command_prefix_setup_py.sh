@@ -1,0 +1,11 @@
+# generated from colcon_core/shell/template/command_prefix.sh.em
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_core/share/webots_ros2_core/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control/share/webots_ros2_control/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_mavic/share/webots_ros2_mavic/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tesla/share/webots_ros2_tesla/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_epuck/share/webots_ros2_epuck/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_turtlebot/share/webots_ros2_turtlebot/package.sh"
+. "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_universal_robot/share/webots_ros2_universal_robot/package.sh"

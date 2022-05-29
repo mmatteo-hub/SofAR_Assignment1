@@ -1,0 +1,35 @@
+[1.327s] Invoking command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/webots_ros2/webots_ros2_tiago': AMENT_PREFIX_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs LD_LIBRARY_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control/lib:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/lib/python3.8/site-packages:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/webots_ros2_tiago build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_tiago/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_tiago/install.log --single-version-externally-managed
+[1.600s] running egg_info
+[1.601s] creating ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info
+[1.602s] writing ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/PKG-INFO
+[1.602s] writing dependency_links to ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/dependency_links.txt
+[1.603s] writing entry points to ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/entry_points.txt
+[1.604s] writing requirements to ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/requires.txt
+[1.604s] writing top-level names to ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/top_level.txt
+[1.607s] writing manifest file '../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/SOURCES.txt'
+[1.611s] reading manifest file '../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/SOURCES.txt'
+[1.613s] writing manifest file '../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info/SOURCES.txt'
+[1.613s] running build
+[1.613s] running install
+[1.614s] running install_data
+[1.615s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/ament_index
+[1.615s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/ament_index/resource_index
+[1.616s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/ament_index/resource_index/packages
+[1.616s] copying resource/webots_ros2_tiago -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/ament_index/resource_index/packages
+[1.617s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/launch
+[1.617s] copying launch/robot_launch.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/launch
+[1.617s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.617s] copying resource/tiago_webots.urdf -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.619s] copying resource/ros2_control.yml -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.619s] copying resource/default.rviz -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.620s] copying resource/map.pgm -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.622s] copying resource/map.yaml -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/resource
+[1.622s] copying package.xml -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago
+[1.623s] creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/worlds
+[1.623s] copying worlds/default.wbt -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/worlds
+[1.625s] copying worlds/.default.wbproj -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/share/webots_ros2_tiago/worlds
+[1.625s] running install_egg_info
+[1.628s] Copying ../../../build/webots_ros2_tiago/webots_ros2_tiago.egg-info to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/lib/python3.8/site-packages/webots_ros2_tiago-1.2.2-py3.8.egg-info
+[1.631s] running install_scripts
+[1.650s] writing list of installed files to '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_tiago/install.log'
+[1.681s] Invoked command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/webots_ros2/webots_ros2_tiago' returned '0': AMENT_PREFIX_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs LD_LIBRARY_PATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_control/lib:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago/lib/python3.8/site-packages:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/webots_ros2_tiago build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_tiago/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_tiago/install.log --single-version-externally-managed

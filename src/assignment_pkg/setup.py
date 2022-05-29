@@ -23,7 +23,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            #'controller = assignment_pkg.controller:main',
+            'controller = assignment_pkg.controller:main',
         ],
     },
 )

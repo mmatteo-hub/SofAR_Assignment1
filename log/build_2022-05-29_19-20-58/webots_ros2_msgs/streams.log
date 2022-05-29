@@ -1,0 +1,168 @@
+[0.067s] Invoking command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_universal_robot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_turtlebot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tests:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tesla:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_mavic:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_epuck:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_core:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_importer:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg:/opt/ros/galactic /usr/bin/cmake --build /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs -- -j2 -l2
+[0.217s] [  2%] Built target webots_ros2_msgs__cpp
+[0.240s] [ 12%] Built target webots_ros2_msgs__rosidl_generator_c
+[0.296s] [ 23%] Built target webots_ros2_msgs__rosidl_typesupport_cpp
+[0.311s] [ 34%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_cpp
+[0.373s] [ 44%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_cpp
+[0.390s] [ 55%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c
+[0.446s] [ 65%] Built target webots_ros2_msgs__rosidl_typesupport_c
+[0.461s] [ 76%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c
+[0.492s] [ 76%] Built target webots_ros2_msgs
+[0.524s] [ 78%] Built target webots_ros2_msgs__py
+[0.571s] [ 87%] Built target webots_ros2_msgs__python
+[0.609s] [ 91%] Built target webots_ros2_msgs__rosidl_typesupport_introspection_c__pyext
+[0.635s] [ 95%] Built target webots_ros2_msgs__rosidl_typesupport_c__pyext
+[0.669s] [100%] Built target webots_ros2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.685s] Invoked command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_universal_robot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_turtlebot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tests:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tesla:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_mavic:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_epuck:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_core:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_importer:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg:/opt/ros/galactic /usr/bin/cmake --build /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs -- -j2 -l2
+[0.832s] Invoking command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_universal_robot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_turtlebot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tests:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tesla:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_mavic:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_epuck:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_core:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_importer:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg:/opt/ros/galactic /usr/bin/cmake --install /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs
+[0.847s] -- Install configuration: ""
+[0.848s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/ament_index/resource_index/rosidl_interfaces/webots_ros2_msgs
+[0.848s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.849s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.849s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.849s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__functions.h
+[0.850s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__functions.c
+[0.850s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__struct.h
+[0.850s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__type_support.h
+[0.850s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/set_int.h
+[0.851s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.851s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/wb_camera_recognition_object.h
+[0.851s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.852s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__functions.c
+[0.852s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__type_support.h
+[0.852s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__struct.h
+[0.853s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__type_support.h
+[0.853s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__functions.h
+[0.853s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__struct.h
+[0.853s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__functions.c
+[0.854s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__functions.h
+[0.854s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.854s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/wb_camera_recognition_objects.h
+[0.855s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/library_path.sh
+[0.855s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/library_path.dsv
+[0.855s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_generator_c.so
+[0.856s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.856s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.857s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.857s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__rosidl_typesupport_fastrtps_c.h
+[0.857s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.857s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.858s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__rosidl_typesupport_fastrtps_c.h
+[0.858s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__rosidl_typesupport_fastrtps_c.h
+[0.858s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.859s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_fastrtps_c.so
+[0.860s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.860s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.861s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.861s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__rosidl_typesupport_fastrtps_cpp.hpp
+[0.861s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/dds_fastrtps
+[0.861s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.862s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.862s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__rosidl_typesupport_fastrtps_cpp.hpp
+[0.862s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/dds_fastrtps
+[0.863s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__rosidl_typesupport_fastrtps_cpp.hpp
+[0.863s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.865s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__type_support.c
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__rosidl_typesupport_introspection_c.h
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.866s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__type_support.c
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__rosidl_typesupport_introspection_c.h
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__type_support.c
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__rosidl_typesupport_introspection_c.h
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.867s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_introspection_c.so
+[0.868s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_c.so
+[0.869s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.869s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.869s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/set_int.hpp
+[0.870s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.870s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__builder.hpp
+[0.870s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__struct.hpp
+[0.871s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__traits.hpp
+[0.871s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.871s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.872s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__builder.hpp
+[0.872s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__traits.hpp
+[0.872s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__builder.hpp
+[0.873s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__struct.hpp
+[0.873s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__struct.hpp
+[0.873s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__traits.hpp
+[0.873s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/wb_camera_recognition_objects.hpp
+[0.874s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/wb_camera_recognition_object.hpp
+[0.874s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs
+[0.874s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv
+[0.875s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail
+[0.875s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__type_support.cpp
+[0.875s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/srv/detail/set_int__rosidl_typesupport_introspection_cpp.hpp
+[0.875s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg
+[0.876s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail
+[0.876s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__type_support.cpp
+[0.876s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_object__rosidl_typesupport_introspection_cpp.hpp
+[0.877s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__type_support.cpp
+[0.877s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/include/webots_ros2_msgs/msg/detail/wb_camera_recognition_objects__rosidl_typesupport_introspection_cpp.hpp
+[0.877s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_introspection_cpp.so
+[0.878s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__rosidl_typesupport_cpp.so
+[0.879s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/pythonpath.sh
+[0.879s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/pythonpath.dsv
+[0.879s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/__init__.py
+[0.925s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg/_wb_camera_recognition_object.py
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg/_wb_camera_recognition_objects.py
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg/_wb_camera_recognition_objects_s.c
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg/_wb_camera_recognition_object_s.c
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/msg/__init__.py
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/srv
+[0.926s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/srv/_set_int_s.c
+[0.927s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/srv/_set_int.py
+[0.927s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/srv/__init__.py
+[0.928s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[0.929s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[0.931s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/python3.8/site-packages/webots_ros2_msgs/webots_ros2_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[0.932s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/lib/libwebots_ros2_msgs__python.so
+[0.933s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/WbCameraRecognitionObject.idl
+[0.934s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/WbCameraRecognitionObjects.idl
+[0.934s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetInt.idl
+[0.934s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/WbCameraRecognitionObject.msg
+[0.935s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/msg/WbCameraRecognitionObjects.msg
+[0.935s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetInt.srv
+[0.935s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetInt_Request.msg
+[0.936s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/srv/SetInt_Response.msg
+[0.936s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/ament_index/resource_index/package_run_dependencies/webots_ros2_msgs
+[0.936s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/ament_index/resource_index/parent_prefix_path/webots_ros2_msgs
+[0.937s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/ament_prefix_path.sh
+[0.937s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/ament_prefix_path.dsv
+[0.937s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/path.sh
+[0.938s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/environment/path.dsv
+[0.938s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.bash
+[0.938s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.sh
+[0.939s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.zsh
+[0.939s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/local_setup.dsv
+[0.939s] -- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/package.dsv
+[0.940s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/ament_index/resource_index/packages/webots_ros2_msgs
+[0.941s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_generator_cExport.cmake
+[0.941s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_generator_cExport-noconfig.cmake
+[0.942s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[0.942s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[0.943s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cExport.cmake
+[0.944s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[0.945s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_generator_cppExport.cmake
+[0.946s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[0.947s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[0.948s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cppExport.cmake
+[0.948s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[0.949s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake-extras.cmake
+[0.949s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.950s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[0.950s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[0.950s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.951s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[0.951s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[0.951s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgsConfig.cmake
+[0.952s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake/webots_ros2_msgsConfig-version.cmake
+[0.952s] -- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/package.xml
+[0.956s] Invoked command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_universal_robot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_turtlebot:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tiago:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tests:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_tesla:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_mavic:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_epuck:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_core:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_importer:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg:/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg:/opt/ros/galactic /usr/bin/cmake --install /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_msgs

@@ -1,0 +1,275 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rosgraph_msgs: 1.0.3 (/opt/ros/galactic/share/rosgraph_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/galactic/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found pluginlib: 5.0.0 (/opt/ros/galactic/share/pluginlib/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found tf2_ros: 0.17.3 (/opt/ros/galactic/share/tf2_ros/cmake)
+-- Found vision_msgs: 3.0.2 (/opt/ros/galactic/share/vision_msgs/cmake)
+-- Found webots_ros2_msgs: 1.2.2 (/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_msgs/share/webots_ros2_msgs/cmake)
+-- Found TinyXML2: /usr/lib/x86_64-linux-gnu/libtinyxml2.so  
+-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable exact version "3.8.10") 
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/matteomaragliano/Desktop/SofAR_Assignment1/build/webots_ros2_driver
+[35m[1mScanning dependencies of target ament_cmake_python_copy_webots_ros2_driver[0m
+[35m[1mScanning dependencies of target ament_cmake_python_copy_webots_ros2_driver_webots[0m
+[  0%] Built target ament_cmake_python_copy_webots_ros2_driver
+[35m[1mScanning dependencies of target driver[0m
+[  0%] Built target ament_cmake_python_copy_webots_ros2_driver_webots
+[35m[1mScanning dependencies of target webots_ros2_driver_imu[0m
+[  5%] [32mBuilding CXX object CMakeFiles/webots_ros2_driver_imu.dir/src/plugins/dynamic/Ros2IMU.cpp.o[0m
+[ 11%] [32mBuilding CXX object CMakeFiles/driver.dir/src/Driver.cpp.o[0m
+[ 16%] [32mBuilding CXX object CMakeFiles/driver.dir/src/WebotsNode.cpp.o[0m
+[ 22%] [32mBuilding CXX object CMakeFiles/webots_ros2_driver_imu.dir/src/plugins/Ros2SensorPlugin.cpp.o[0m
+[ 27%] [32mBuilding CXX object CMakeFiles/webots_ros2_driver_imu.dir/src/utils/Utils.cpp.o[0m
+[ 33%] [32m[1mLinking CXX shared library libwebots_ros2_driver_imu.so[0m
+[ 33%] Built target webots_ros2_driver_imu
+[ 38%] [32mBuilding CXX object CMakeFiles/driver.dir/src/PythonPlugin.cpp.o[0m
+[ 44%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/Ros2SensorPlugin.cpp.o[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2Lidar.cpp.o[0m
+[ 55%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2LED.cpp.o[0m
+[ 61%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2Camera.cpp.o[0m
+[ 66%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2GPS.cpp.o[0m
+[ 72%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2RangeFinder.cpp.o[0m
+[ 77%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2DistanceSensor.cpp.o[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/driver.dir/src/plugins/static/Ros2LightSensor.cpp.o[0m
+[ 88%] [32mBuilding CXX object CMakeFiles/driver.dir/src/utils/Math.cpp.o[0m
+[ 94%] [32mBuilding CXX object CMakeFiles/driver.dir/src/utils/Utils.cpp.o[0m
+[35m[1mScanning dependencies of target ament_cmake_python_build_webots_ros2_driver_webots_egg[0m
+[100%] [32m[1mLinking CXX executable driver[0m
+running egg_info
+creating webots_ros2_driver_webots.egg-info
+writing webots_ros2_driver_webots.egg-info/PKG-INFO
+writing dependency_links to webots_ros2_driver_webots.egg-info/dependency_links.txt
+writing top-level names to webots_ros2_driver_webots.egg-info/top_level.txt
+writing manifest file 'webots_ros2_driver_webots.egg-info/SOURCES.txt'
+reading manifest file 'webots_ros2_driver_webots.egg-info/SOURCES.txt'
+writing manifest file 'webots_ros2_driver_webots.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_webots_ros2_driver_webots_egg
+[35m[1mScanning dependencies of target ament_cmake_python_build_webots_ros2_driver_egg[0m
+running egg_info
+creating webots_ros2_driver.egg-info
+writing webots_ros2_driver.egg-info/PKG-INFO
+writing dependency_links to webots_ros2_driver.egg-info/dependency_links.txt
+writing top-level names to webots_ros2_driver.egg-info/top_level.txt
+writing manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+reading manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+writing manifest file 'webots_ros2_driver.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_webots_ros2_driver_egg
+[100%] Built target driver
+-- Install configuration: ""
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/pythonpath.sh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/pythonpath.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver_webots.egg-info
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver_webots.egg-info/PKG-INFO
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver_webots.egg-info/dependency_links.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver_webots.egg-info/SOURCES.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver_webots.egg-info/top_level.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/vehicle.py
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/_controller.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/_vehicle.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/__init__.py
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/controller.py
+Listing '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/__init__.py'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/controller.py'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver_webots/vehicle.py'...
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver.egg-info
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver.egg-info/PKG-INFO
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver.egg-info/dependency_links.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver.egg-info/SOURCES.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages//webots_ros2_driver.egg-info/top_level.txt
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/webots_launcher.py
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/utils.py
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/__init__.py
+Listing '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/__init__.py'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/utils.py'...
+Compiling '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/python3.8/site-packages/webots_ros2_driver/webots_launcher.py'...
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/utils
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/utils/Math.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/utils/Utils.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/PluginInterface.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/Ros2SensorPlugin.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2GPS.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2DistanceSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2Camera.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2RangeFinder.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2LED.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2LightSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/static/Ros2Lidar.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/dynamic
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/plugins/dynamic/Ros2IMU.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/WebotsNode.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots_ros2_driver/PythonPlugin.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/webots_ros2_driver/driver
+-- Set runtime path of "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/webots_ros2_driver/driver" to ""
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/utils
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/utils/string.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/utils/system.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/utils/motion.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/utils/ansi_codes.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/inertial_unit.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/compass.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/microphone.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/motor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/light_sensor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/led.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/position_sensor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/mouse_state.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/camera_recognition_object.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/radio.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/gps.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/gyro.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/pen.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window/default.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window/robot_window.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window/robot_wwi.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window/generic_robot_window
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/plugins/robot_window/generic_robot_window/generic.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/joystick.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/device.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/contact_point.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/types.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/keyboard.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/altimeter.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/distance_sensor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/emitter.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/range_finder.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/radar.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/accelerometer.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/speaker.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/console.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/vehicle
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/vehicle/car.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/vehicle/driver.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/lidar_point.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/receiver.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/supervisor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/camera.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/mouse.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/display.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/nodes.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/brake.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/remote_control.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/lidar.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/radar_target.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/robot.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/connector.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/skin.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/c/webots/touch_sensor.h
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/utils
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/utils/Motion.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/utils/AnsiCodes.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Radar.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Node.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Display.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Field.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Skin.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/InertialUnit.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Camera.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Joystick.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Receiver.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Brake.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/LED.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Connector.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Pen.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Robot.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/RangeFinder.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Mouse.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Compass.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/LightSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Lidar.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Supervisor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/vehicle
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/vehicle/Driver.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/vehicle/Car.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/DistanceSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/PositionSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/GPS.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Device.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Gyro.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Emitter.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Accelerometer.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/TouchSensor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Altimeter.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/ImageRef.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Speaker.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Motor.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/include/webots/cpp/webots/Keyboard.hpp
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libwebots_ros2_driver_imu.so
+-- Set runtime path of "/home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libwebots_ros2_driver_imu.so" to ""
+-- Up-to-date: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libCppDriver.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libCppController.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libcar.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libdriver.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libCppCar.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/lib/libController.so
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/webots_ros2_imu.xml
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/library_path.sh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/library_path.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/ament_index/resource_index/package_run_dependencies/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/ament_index/resource_index/parent_prefix_path/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/ament_prefix_path.sh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/ament_prefix_path.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/path.sh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/environment/path.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/local_setup.bash
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/local_setup.sh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/local_setup.zsh
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/local_setup.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/package.dsv
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/ament_index/resource_index/packages/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/ament_index/resource_index/webots_ros2_driver__pluginlib__plugin/webots_ros2_driver
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/cmake/webots_ros2_driverConfig.cmake
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/cmake/webots_ros2_driverConfig-version.cmake
+-- Installing: /home/matteomaragliano/Desktop/SofAR_Assignment1/install/webots_ros2_driver/share/webots_ros2_driver/package.xml

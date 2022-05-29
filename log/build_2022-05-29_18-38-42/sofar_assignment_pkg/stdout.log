@@ -1,0 +1,41 @@
+running egg_info
+creating ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info
+writing ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/requires.txt
+writing top-level names to ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/top_level.txt
+writing manifest file '../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/SOURCES.txt'
+reading manifest file '../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib/sofar_assignment_pkg
+copying sofar_assignment_pkg/controller_tiago.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib/sofar_assignment_pkg
+copying sofar_assignment_pkg/__init__.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib/sofar_assignment_pkg
+running install
+running install_lib
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg
+copying /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib/sofar_assignment_pkg/controller_tiago.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg
+copying /home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/build/lib/sofar_assignment_pkg/__init__.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg
+byte-compiling /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg/controller_tiago.py to controller_tiago.cpython-38.pyc
+byte-compiling /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/ament_index
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/ament_index/resource_index
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/ament_index/resource_index/packages
+copying resource/sofar_assignment_pkg -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/ament_index/resource_index/packages
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/launch
+copying launch/assignment_launch.py -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/launch
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/worlds
+copying worlds/factory.wbt -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/worlds
+creating /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/resource
+copying resource/tiago_robot.urdf -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg/resource
+copying package.xml -> /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/share/sofar_assignment_pkg
+running install_egg_info
+Copying ../../build/sofar_assignment_pkg/sofar_assignment_pkg.egg-info to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/python3.8/site-packages/sofar_assignment_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+Installing controller_tiago script to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/sofar_assignment_pkg/lib/sofar_assignment_pkg
+writing list of installed files to '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/sofar_assignment_pkg/install.log'

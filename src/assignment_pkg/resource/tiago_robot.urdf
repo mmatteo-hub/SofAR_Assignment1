@@ -10,7 +10,6 @@
                 <frameName>hokuyo</frameName>
             </ros>
         </device>
-
         <plugin type="webots_ros2_control::Ros2Control" />
     </webots>
 

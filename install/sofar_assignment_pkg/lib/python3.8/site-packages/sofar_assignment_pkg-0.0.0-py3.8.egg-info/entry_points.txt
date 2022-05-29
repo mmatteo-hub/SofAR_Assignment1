@@ -1,0 +1,3 @@
+[console_scripts]
+controller_tiago = sofar_assignment_pkg.controller_tiago:main
+
