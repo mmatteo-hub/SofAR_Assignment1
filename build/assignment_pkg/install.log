@@ -3,6 +3,9 @@
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg/__pycache__/__init__.cpython-38.pyc
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg/__pycache__/controller.cpython-38.pyc
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/ament_index/resource_index/packages/assignment_pkg
+/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/assignment_pkg/launch/assignment_launch.py
+/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/assignment_pkg/worlds/factory.wbt
+/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/assignment_pkg/resource/tiago_robot.urdf
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/share/assignment_pkg/package.xml
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info/PKG-INFO
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info/dependency_links.txt
@@ -11,4 +14,3 @@
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info/requires.txt
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info/zip-safe
 /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info/entry_points.txt
-/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/assignment_pkg/controller

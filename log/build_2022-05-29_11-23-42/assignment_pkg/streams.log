@@ -1,0 +1,16 @@
+[0.895s] Invoking command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/assignment_ws': PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment_pkg build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log --single-version-externally-managed
+[1.167s] running egg_info
+[1.169s] writing ../../build/assignment_pkg/assignment_pkg.egg-info/PKG-INFO
+[1.171s] writing dependency_links to ../../build/assignment_pkg/assignment_pkg.egg-info/dependency_links.txt
+[1.171s] writing entry points to ../../build/assignment_pkg/assignment_pkg.egg-info/entry_points.txt
+[1.171s] writing requirements to ../../build/assignment_pkg/assignment_pkg.egg-info/requires.txt
+[1.171s] writing top-level names to ../../build/assignment_pkg/assignment_pkg.egg-info/top_level.txt
+[1.221s] reading manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+[1.223s] writing manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+[1.223s] running build
+[1.223s] running build_py
+[1.224s] running install
+[1.224s] running install_lib
+[1.226s] running install_data
+[1.227s] error: can't copy 'assignment_launch.py': doesn't exist or not a regular file
+[1.247s] Invoked command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/assignment_ws' returned '1': PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment_pkg build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log --single-version-externally-managed

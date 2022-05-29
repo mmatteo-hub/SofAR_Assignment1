@@ -1,0 +1,20 @@
+[0.784s] Invoking command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/assignment_ws': PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment_pkg build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log --single-version-externally-managed
+[1.036s] running egg_info
+[1.037s] writing ../../build/assignment_pkg/assignment_pkg.egg-info/PKG-INFO
+[1.037s] writing dependency_links to ../../build/assignment_pkg/assignment_pkg.egg-info/dependency_links.txt
+[1.038s] writing entry points to ../../build/assignment_pkg/assignment_pkg.egg-info/entry_points.txt
+[1.038s] writing requirements to ../../build/assignment_pkg/assignment_pkg.egg-info/requires.txt
+[1.038s] writing top-level names to ../../build/assignment_pkg/assignment_pkg.egg-info/top_level.txt
+[1.084s] reading manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+[1.086s] writing manifest file '../../build/assignment_pkg/assignment_pkg.egg-info/SOURCES.txt'
+[1.086s] running build
+[1.086s] running build_py
+[1.087s] running install
+[1.087s] running install_lib
+[1.089s] running install_data
+[1.090s] running install_egg_info
+[1.092s] removing '/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[1.092s] Copying ../../build/assignment_pkg/assignment_pkg.egg-info to /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages/assignment_pkg-0.0.0-py3.8.egg-info
+[1.093s] running install_scripts
+[1.113s] writing list of installed files to '/home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log'
+[1.140s] Invoked command in '/home/matteomaragliano/Desktop/SofAR_Assignment1/src/assignment_ws' returned '0': PYTHONPATH=/home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/assignment_pkg build --build-base /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/build install --prefix /home/matteomaragliano/Desktop/SofAR_Assignment1/install/assignment_pkg --record /home/matteomaragliano/Desktop/SofAR_Assignment1/build/assignment_pkg/install.log --single-version-externally-managed
