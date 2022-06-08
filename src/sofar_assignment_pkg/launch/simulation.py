@@ -6,9 +6,11 @@ from launch import LaunchDescription
 from ament_index_python.packages import get_package_share_directory
 from webots_ros2_driver.webots_launcher import WebotsLauncher
 
+PACKAGE_NAME = 'sofar_assignment_pkg'
+
 def generate_launch_description():
-    package_name = 'robot_driver_pkg'
-    package_dir = get_package_share_directory(package_name)
+    
+    package_dir = get_package_share_directory(PACKAGE_NAME)
     
     # Loads the robot description file
     robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'robot.urdf')).read_text()
@@ -19,38 +21,33 @@ def generate_launch_description():
     )
     
     # Creates the driver Nodes
-    ur_driver1 = Node(
+    driver_rbt1 = Node(
         package='webots_ros2_driver',
         executable='driver',
-        namespace='ur_rbt1',
+        namespace='rbt1',
         output='screen',
-        additional_env={'WEBOTS_ROBOT_NAME': 'ur_rbt1'},
+        additional_env={'WEBOTS_ROBOT_NAME': 'RBT_1'},
+        parameters=[
+            {'robot_description': robot_description},
+        ],
+    )
+
+    driver_rbt2 = Node(
+        package='webots_ros2_driver',
+        executable='driver',
+        namespace='rbt2',
+        output='screen',
+        additional_env={'WEBOTS_ROBOT_NAME': 'RBT_2'},
         parameters=[
             {'robot_description': robot_description},
         ]
     )
 
-    ur_driver2 = Node(
-        package='webots_ros2_driver',
-        executable='driver',
-        namespace='ur_rbt2',
-        output='screen',
-        additional_env={'WEBOTS_ROBOT_NAME': 'ur_rbt2'},
-        parameters=[
-            {'robot_description': robot_description},
-        ]
-    )
 
-    obstacle_avoider = Node(
-        package="robot_driver_pkg",
-        executable="obstacle_avoider"
-    )
- 
     return LaunchDescription([
         webots,
-        ur_driver1,
-        ur_driver2,
-        obstacle_avoider,
+        driver_rbt1,
+        driver_rbt2,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(
                 target_action=webots,
