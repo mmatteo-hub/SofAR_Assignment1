@@ -1,8 +1,0 @@
-setup.py
-webots_ros2_driver_webots/__init__.py
-webots_ros2_driver_webots/controller.py
-webots_ros2_driver_webots/vehicle.py
-webots_ros2_driver_webots.egg-info/PKG-INFO
-webots_ros2_driver_webots.egg-info/SOURCES.txt
-webots_ros2_driver_webots.egg-info/dependency_links.txt
-webots_ros2_driver_webots.egg-info/top_level.txt
