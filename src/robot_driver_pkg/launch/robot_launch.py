@@ -18,25 +18,38 @@ def generate_launch_description():
         world=os.path.join(package_dir, 'worlds', 'arena_4.wbt')
     )
     
-    # Creates the driver Node
-    my_robot_driver = Node(
+    # Creates the driver Nodes
+    ur_driver1 = Node(
         package='webots_ros2_driver',
         executable='driver',
+        namespace='ur_rbt1',
         output='screen',
+        additional_env={'WEBOTS_ROBOT_NAME': 'ur_rbt1'},
         parameters=[
             {'robot_description': robot_description},
         ]
     )
-    
-    # Creates the obstacle avoider Node
+
+    ur_driver2 = Node(
+        package='webots_ros2_driver',
+        executable='driver',
+        namespace='ur_rbt2',
+        output='screen',
+        additional_env={'WEBOTS_ROBOT_NAME': 'ur_rbt2'},
+        parameters=[
+            {'robot_description': robot_description},
+        ]
+    )
+
     obstacle_avoider = Node(
-        package=package_name,
-        executable='obstacle_avoider',   
+        package="robot_driver_pkg",
+        executable="obstacle_avoider"
     )
  
     return LaunchDescription([
         webots,
-        my_robot_driver,
+        ur_driver1,
+        ur_driver2,
         obstacle_avoider,
         launch.actions.RegisterEventHandler(
             event_handler=launch.event_handlers.OnProcessExit(

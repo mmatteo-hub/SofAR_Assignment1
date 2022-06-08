@@ -1,4 +1,0 @@
-[console_scripts]
-obstacle_avoider = robot_driver_pkg.obstacle_avoider:main
-robot_driver = robot_driver_pkg.robot_driver:main
-

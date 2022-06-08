@@ -136,7 +136,7 @@ Robot {
       aperture 1
     }
   ]
-  name "my_robot"
+  name "ur_rbt1"
   boundingObject Transform {
     translation 0 0 0.0415
     rotation 0 0 1 1.57
@@ -273,7 +273,7 @@ Robot {
       aperture 1
     }
   ]
-  name "my_robot(1)"
+  name "ur_rbt2"
   boundingObject Transform {
     translation 0 0 0.0415
     rotation 0 0 1 1.57
