@@ -1,0 +1,45 @@
+running egg_info
+creating build/robot_driver_pkg/robot_driver_pkg.egg-info
+writing build/robot_driver_pkg/robot_driver_pkg.egg-info/PKG-INFO
+writing dependency_links to build/robot_driver_pkg/robot_driver_pkg.egg-info/dependency_links.txt
+writing entry points to build/robot_driver_pkg/robot_driver_pkg.egg-info/entry_points.txt
+writing requirements to build/robot_driver_pkg/robot_driver_pkg.egg-info/requires.txt
+writing top-level names to build/robot_driver_pkg/robot_driver_pkg.egg-info/top_level.txt
+writing manifest file 'build/robot_driver_pkg/robot_driver_pkg.egg-info/SOURCES.txt'
+reading manifest file 'build/robot_driver_pkg/robot_driver_pkg.egg-info/SOURCES.txt'
+writing manifest file 'build/robot_driver_pkg/robot_driver_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg
+copying robot_driver_pkg/obstacle_avoider.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg
+copying robot_driver_pkg/robot_driver.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg
+copying robot_driver_pkg/__init__.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg
+running install
+running install_lib
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg
+copying /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg/obstacle_avoider.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg
+copying /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg/robot_driver.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg
+copying /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/build/lib/robot_driver_pkg/__init__.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg
+byte-compiling /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg/obstacle_avoider.py to obstacle_avoider.cpython-38.pyc
+byte-compiling /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg/robot_driver.py to robot_driver.cpython-38.pyc
+byte-compiling /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/ament_index
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/ament_index/resource_index
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/ament_index/resource_index/packages
+copying resource/robot_driver_pkg -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/launch
+copying launch/robot_launch.py -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/launch
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/worlds
+copying worlds/arena.wbt -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/worlds
+creating /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/resource
+copying resource/robot.urdf -> /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/share/robot_driver_pkg/resource
+running install_egg_info
+Copying build/robot_driver_pkg/robot_driver_pkg.egg-info to /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/python3.8/site-packages/robot_driver_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+Installing obstacle_avoider script to /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/robot_driver_pkg
+Installing robot_driver script to /home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/install/robot_driver_pkg/lib/robot_driver_pkg
+writing list of installed files to '/home/ilmusu/OneDrive/Universita/Magistrale_1/Software Architectures For Robotics/Examples/7_webots_workspace/src/robot_driver_pkg/build/robot_driver_pkg/install.log'
