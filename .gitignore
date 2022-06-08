@@ -1,4 +1,5 @@
 # Folder to ignore
 
-/build
-/log
+/build/*
+/log/*
+/install/*
