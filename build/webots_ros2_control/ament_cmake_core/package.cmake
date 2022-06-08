@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "webots_ros2_control")
-set(webots_ros2_control_VERSION "1.2.2")
+set(webots_ros2_control_VERSION "1.2.3")
 set(webots_ros2_control_MAINTAINER "Cyberbotics <support@cyberbotics.com>")
 set(webots_ros2_control_BUILD_DEPENDS "ros_environment" "hardware_interface" "controller_manager" "pluginlib" "rclcpp" "rclcpp_lifecycle" "webots_ros2_driver")
 set(webots_ros2_control_BUILDTOOL_DEPENDS "ament_cmake")

@@ -11,6 +11,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "DEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
+  "GALACTIC"
   "PLUGINLIB__DISABLE_BOOST_FUNCTIONS"
   "RCUTILS_ENABLE_FAULT_INJECTION"
   "webots_ros2_control_system_EXPORTS"

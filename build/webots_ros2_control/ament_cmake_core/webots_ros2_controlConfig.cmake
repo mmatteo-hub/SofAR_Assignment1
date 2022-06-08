@@ -16,7 +16,7 @@ set(_webots_ros2_control_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT webots_ros2_control_FIND_QUIETLY)
-  message(STATUS "Found webots_ros2_control: 1.2.2 (${webots_ros2_control_DIR})")
+  message(STATUS "Found webots_ros2_control: 1.2.3 (${webots_ros2_control_DIR})")
 endif()
 
 # warn when using a deprecated package

@@ -16,7 +16,7 @@ set(_webots_ros2_driver_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT webots_ros2_driver_FIND_QUIETLY)
-  message(STATUS "Found webots_ros2_driver: 1.2.2 (${webots_ros2_driver_DIR})")
+  message(STATUS "Found webots_ros2_driver: 1.2.3 (${webots_ros2_driver_DIR})")
 endif()
 
 # warn when using a deprecated package

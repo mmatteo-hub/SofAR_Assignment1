@@ -133,6 +133,8 @@ unordered_map
 -
 Python.h
 -
+string
+-
 webots_ros2_driver/PluginInterface.hpp
 -
 webots_ros2_driver/WebotsNode.hpp

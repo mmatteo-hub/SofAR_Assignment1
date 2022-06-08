@@ -1,5 +1,5 @@
 set(_AMENT_PACKAGE_NAME "webots_ros2_driver")
-set(webots_ros2_driver_VERSION "1.2.2")
+set(webots_ros2_driver_VERSION "1.2.3")
 set(webots_ros2_driver_MAINTAINER "Cyberbotics <support@cyberbotics.com>")
 set(webots_ros2_driver_BUILD_DEPENDS "ros_environment" "pluginlib" "rclcpp" "rclpy" "sensor_msgs" "std_msgs" "geometry_msgs" "tf2_ros" "vision_msgs" "tinyxml2_vendor" "webots_ros2_msgs")
 set(webots_ros2_driver_BUILDTOOL_DEPENDS "ament_cmake" "python_cmake_module" "ament_cmake_python")
