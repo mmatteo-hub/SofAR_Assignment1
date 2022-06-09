@@ -19,10 +19,16 @@ class ObstacleAvoider(Node):
         self.__right_sensor_value = message.range
         
         command_message = Twist()
-        
-        if self.__left_sensor_value < 0.9*MAX_RANGE or self.__right_sensor_value < 0.9*MAX_RANGE:
 
+        if self.__left_sensor_value < 0.9*MAX_RANGE and self.__right_sensor_value < 0.9*MAX_RANGE:
             command_message.angular.z = -2.0
+            command_message.linear.x = -0.1
+        
+        elif self.__right_sensor_value > 0.9*MAX_RANGE and self.__left_sensor_value < 0.9*MAX_RANGE:
+            command_message.angular.z = -2.0
+
+        elif self.__right_sensor_value < 0.9*MAX_RANGE and self.__left_sensor_value > 0.9*MAX_RANGE:
+            command_message.angular.z = 2.0
 
         else:
             command_message.linear.x = 0.1
