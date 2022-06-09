@@ -1,14 +1,14 @@
 <?xml version="1.0" ?>
 <robot name="MyRbt1">
     <webots>
-        <device reference="ds00" type="DistanceSensor">
+        <device reference="ds0" type="DistanceSensor">
             <ros>
                 <topicName>left_sensor</topicName>
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>
-        
-        <device reference="ds10" type="DistanceSensor">
+    
+        <device reference="ds1" type="DistanceSensor">
             <ros>
                 <topicName>right_sensor</topicName>
                 <alwaysOn>true</alwaysOn>
