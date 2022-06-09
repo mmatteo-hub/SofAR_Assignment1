@@ -8,7 +8,8 @@ data_files.append(('share/ament_index/resource_index/packages', ['resource/'+pac
 data_files.append(('share/'+package_name+'/launch', ['launch/simulation.py']))
 data_files.append(('share/'+package_name+'/launch', ['launch/robots_controller.py']))
 data_files.append(('share/'+package_name+'/worlds', ['worlds/arena_4.wbt']))
-data_files.append(('share/'+package_name+'/resource', ['resource/robot.urdf']))
+data_files.append(('share/'+package_name+'/resource', ['resource/robot1.urdf']))
+data_files.append(('share/'+package_name+'/resource', ['resource/robot2.urdf']))
 data_files.append(('share/'+package_name, ['package.xml']))
 
 setup(
@@ -25,6 +26,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'robot_driver1 = sofar_assignment_pkg.robot_driver1:main',
+            'robot_driver2 = sofar_assignment_pkg.robot_driver2:main',
             'collision_avoidance = sofar_assignment_pkg.collision_avoidance:main',
         ],
     },

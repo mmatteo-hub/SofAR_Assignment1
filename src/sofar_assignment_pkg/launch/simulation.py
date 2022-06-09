@@ -13,7 +13,8 @@ def generate_launch_description():
     package_dir = get_package_share_directory(PACKAGE_NAME)
     
     # Loads the robot description file
-    robot_description = pathlib.Path(os.path.join(package_dir, 'resource', 'robot.urdf')).read_text()
+    robot_description1 = pathlib.Path(os.path.join(package_dir, 'resource', 'robot1.urdf')).read_text()
+    robot_description2 = pathlib.Path(os.path.join(package_dir, 'resource', 'robot2.urdf')).read_text()
     
     # Loads the world description file
     webots = WebotsLauncher(
@@ -28,10 +29,10 @@ def generate_launch_description():
         output='screen',
         additional_env={'WEBOTS_ROBOT_NAME': 'RBT_1'},
         parameters=[
-            {'robot_description': robot_description},
+            {'robot_description': robot_description1},
         ],
     )
-
+    
     driver_rbt2 = Node(
         package='webots_ros2_driver',
         executable='driver',
@@ -39,10 +40,10 @@ def generate_launch_description():
         output='screen',
         additional_env={'WEBOTS_ROBOT_NAME': 'RBT_2'},
         parameters=[
-            {'robot_description': robot_description},
+            {'robot_description': robot_description2},
         ]
     )
-
+    
 
     return LaunchDescription([
         webots,

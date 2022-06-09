@@ -4,7 +4,7 @@ from geometry_msgs.msg import Twist
 HALF_DISTANCE_BETWEEN_WHEELS=0.045
 WHEEL_RADIUS=0.025
 
-class RobotDriver:
+class RobotDriver2:
     def init(self, webots_node, properties):
         self.__robot=webots_node.robot
         self.__left_motor=self.__robot.getDevice('left wheel motor')
@@ -16,8 +16,8 @@ class RobotDriver:
         self.__target_twist=Twist()
             
         rclpy.init(args=None)
-        self.__node=rclpy.create_node('robot_driver')
-        self.__node.create_subscription(Twist, 'cmd_vel', self.__cmd_vel_callback,1)
+        self.__node=rclpy.create_node('rbt2_robot_driver')
+        self.__node.create_subscription(Twist, '/rbt2/cmd_vel', self.__cmd_vel_callback,1)
         
     def __cmd_vel_callback(self, twist):
         self.__target_twist=twist

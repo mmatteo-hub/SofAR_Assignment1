@@ -1,5 +1,5 @@
 <?xml version="1.0" ?>
-<robot name="MyRbt">
+<robot name="MyRbt1">
     <webots>
         <device reference="ds0" type="DistanceSensor">
             <ros>
@@ -13,6 +13,6 @@
                 <alwaysOn>true</alwaysOn>
             </ros>
         </device>
-        <plugin type="sofar_assignment_pkg.robot_driver.RobotDriver"/>
+        <plugin type="sofar_assignment_pkg.robot_driver1.RobotDriver1"/>
     </webots>
 </robot>
