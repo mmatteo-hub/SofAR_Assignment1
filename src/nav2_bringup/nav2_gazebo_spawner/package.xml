@@ -4,8 +4,9 @@
   <name>nav2_gazebo_spawner</name>
   <version>1.0.12</version>
   <description>Package for spawning a robot model into Gazebo for Nav2</description>
-  <maintainer email="carlos.orduno@intel.com">lkumarbe</maintainer>
-  <maintainer email="lalit.kumar.begani@intel.com">lkumarbe</maintainer>
+  <maintainer email="4636216@studenti.unige.it">lkumarbe</maintainer>
+  <maintainer email="4670261@studenti.unige.it">lkumarbe</maintainer>
+  <maintainer email="4670964@studenti.unige.it">lkumarbe</maintainer>
   <license>Apache-2.0</license>
 
   <exec_depend>rclpy</exec_depend>

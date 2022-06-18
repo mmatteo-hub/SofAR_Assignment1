@@ -4,9 +4,9 @@
   <name>nav2_bringup</name>
   <version>1.0.12</version>
   <description>Bringup scripts and configurations for the Nav2 stack</description>
-  <maintainer email="michael.jeronimo@intel.com">Michael Jeronimo</maintainer>
-  <maintainer email="stevenmacenski@gmail.com">Steve Macenski</maintainer>
-  <maintainer email="carlos.a.orduno@intel.com">Carlos Orduno</maintainer>
+  <maintainer email="4636216@studenti.unige.it">lkumarbe</maintainer>
+  <maintainer email="4670261@studenti.unige.it">lkumarbe</maintainer>
+  <maintainer email="4670964@studenti.unige.it">lkumarbe</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
