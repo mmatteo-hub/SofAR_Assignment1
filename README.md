@@ -1,7 +1,7 @@
 # Software Architecture for Robotics: Assignment
 
 ## <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="5%" height="5%">  Navigation of two independent robots avoiding collision
-The assignment concern the navigation of two independet robots in a given environment. The robot has to localize themselves into it and, as soon as they are given a goal, the have to reach it while avoiding obstacles.
+The assignment concern the navigation of two independet robots in a given environment. The robot has to localize themselves into it and, as soon as they are given a goal, they have to reach it while avoiding obstacles.
 The difficulty is the presence of dynamic objects, so the initial plan could be changed, so there is an online planning.
 
 
