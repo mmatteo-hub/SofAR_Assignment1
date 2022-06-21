@@ -1,26 +1,22 @@
 ## Shell script to build and run the code
 
-# take the global path of the workspace
-MY_PATH=$(dirname "$0")
-MY_PATH=$(cd "$MY_PATH" && pwd)
-if [[ -z "$MY_PATH" ]] ; then
-	exit 1
-fi
-
-# remove previous buildings
+# Removing previous build folders
 rm -r build/ install/ log/
 
-# build the entire workspace
+# Building the entire workspace
 colcon build
 
-# source the workspace
+# Sourcing the new builtworkspace
 source install/local_setup.bash
 
-# export the robot model
+# Comunicating to Gazebo where to find additional models
+WORLD_MODELS=$(pwd)"/src/my_bringup/worlds/models"
+TURTLEBOT_MODELS="/opt/ros/galactic/share/turtlebot3_gazebo/models"
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:$TURTLEBOT_MODELS:$WORLD_MODELS
+# Setting the turtlebot3 model type
 export TURTLEBOT3_MODEL=waffle
 
-# export the model world for gazebo "${MY_PATH}/src"
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:"${MY_PATH}/src/my_bringup/worlds/models"
+echo $WORLD_MODELS
 
-# launch the program of the
+# Launching the simulation
 ros2 launch my_bringup two_tb3_simulation_launch.py
