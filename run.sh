@@ -20,7 +20,7 @@ source install/local_setup.bash
 export TURTLEBOT3_MODEL=waffle
 
 # export the model world for gazebo "${MY_PATH}/src"
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:"${MY_PATH}/src/nav2_bringup/bringup/worlds/models"
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:"${MY_PATH}/src/my_bringup/worlds/models"
 
 # launch the program of the
-ros2 launch nav2_bringup two_tb3_simulation_launch.py
+ros2 launch my_bringup two_tb3_simulation_launch.py

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
-  <name>nav2_bringup</name>
+  <name>my_bringup</name>
   <version>1.0.12</version>
   <description>Bringup scripts and configurations for the Nav2 stack</description>
   <maintainer email="4636216@studenti.unige.it">lkumarbe</maintainer>
