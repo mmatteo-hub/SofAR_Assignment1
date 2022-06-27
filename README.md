@@ -4,11 +4,14 @@
 The assignment concern the navigation of two independet robots in a given environment. The robot has to localize themselves into it and, as soon as they are given a goal, they have to reach it while avoiding obstacles.
 The difficulty is the presence of dynamic objects, so the initial plan could be changed, so there is an online planning.
 
-
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="5%" height="5%"> Robot: TurtleBot3 Waffle
 <img src="https://user-images.githubusercontent.com/62358773/174429109-3092766c-5d64-4d7b-8aae-002553882374.png" width="15%" height="15%">
 The model of robot used is TurtleBot3 Waffle. TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping.
 
+## <img src="https://user-images.githubusercontent.com/62358773/175919787-96dfd662-af73-4ab6-a6ad-e7049ff1336e.png" width="5%" height="5%"> Simulation start
+In order to run the simulation we provided an executable `.sh` file, the command to use is: `./run.sh`
+The file runs the Gazebo simulation and the two Rviz (one for each robot spawned).
+It also provides the exports for the Gazebo map and the robot model for the simulations, in a way that the user does not have to insert them in the `.bashrc` file.
 
 ## Nav2
 <p align="center">
