@@ -20,3 +20,5 @@ echo $WORLD_MODELS
 
 # Launching the simulation
 ros2 launch my_bringup two_tb3_simulation_launch.py
+
+ros2 launch robot_ui ui_launch.py

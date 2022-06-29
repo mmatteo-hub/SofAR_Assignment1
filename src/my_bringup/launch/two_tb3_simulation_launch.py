@@ -36,7 +36,6 @@ def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('my_bringup')
     launch_dir = os.path.join(bringup_dir, 'launch')
-    node_dir = get_package_share_directory('robot_ui')
 
     # Names and poses of the robots
     robots = [
@@ -174,13 +173,6 @@ def generate_launch_description():
 
         nav_instances_cmds.append(group)
 
-    nav2_ui = Node(
-        package = node_dir,
-        executable = 'node_ui',
-        output = "screen",
-        prefix = ["lxterminal -e"],
-    )
-
     # Create the launch description and populate
     ld = LaunchDescription()
 
@@ -203,7 +195,5 @@ def generate_launch_description():
 
     for simulation_instance_cmd in nav_instances_cmds:
         ld.add_action(simulation_instance_cmd)
-
-    ld.add_action(nav2_ui)
 
     return ld
