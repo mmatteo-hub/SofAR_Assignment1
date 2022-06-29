@@ -1,6 +1,8 @@
 from setuptools import setup
 
 package_name = 'robot_ui'
+_maintainer = ['matteomaragliano', 'ilmusu', 'danipari']
+_maintainer_email = ['4636216@studenti.unige.it','4670261@studenti.unige.it','4670964@studenti.unige.it']
 
 setup(
     name=package_name,
@@ -13,8 +15,8 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='ilmusu',
-    maintainer_email='mattia.musumeci@yahoo.it',
+    maintainer=_maintainer,
+    maintainer_email=_maintainer_email,
     description='TODO: Package description',
     license='TODO: License declaration',
     tests_require=['pytest'],
