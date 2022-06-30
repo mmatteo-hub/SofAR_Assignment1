@@ -8,6 +8,5 @@ def generate_launch_description():
         package = 'robot_ui',
         executable = 'robot_ui',
         output = "screen",
-        prefix = ["lxterminal -e"],
     )
 ])

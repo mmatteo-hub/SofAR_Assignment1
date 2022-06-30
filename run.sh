@@ -1,4 +1,4 @@
-## Shell script to build and run the code
+## Shell script to build and run the simulation code
 
 # Exit when any command fails
 set -e
@@ -45,6 +45,3 @@ export TURTLEBOT3_MODEL=waffle
 
 # Launching the simulation
 ros2 launch my_bringup two_tb3_simulation_launch.py
-
-
-
