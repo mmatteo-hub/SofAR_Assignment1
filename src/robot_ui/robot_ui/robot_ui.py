@@ -1,6 +1,6 @@
 import rclpy
-from rclpy import Node
-from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult, NavigationResult
+from rclpy.node import Node
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 from rclpy.duration import Duration
 from geometry_msgs.msg import PoseStamped
 
@@ -12,10 +12,14 @@ class RobotUI(Node):
         self._navigator_r1 = BasicNavigator()
         self._navigator_r2 = BasicNavigator()
 
+    def _set_initial_poses(self):
+        # Before using nav2, it is necesary to check that it is active        
+        print("Waiting for Nav2 to be active...")
         self._navigator_r1.waitUntilNav2Active()
         self._navigator_r2.waitUntilNav2Active()
-
-    def _set_initial_pose(self):
+        print("Done")
+        
+        print("Setting initial poses... ")
         inital_pose_r1 = PoseStamped()
         inital_pose_r2 = PoseStamped()
 
@@ -40,17 +44,25 @@ class RobotUI(Node):
         inital_pose_r2.pose.orientation.y = 0.0
         inital_pose_r2.pose.orientation.z = 0.0
         inital_pose_r2.pose.orientation.w = 1.0
-
+        
         self._navigator_r1.setInitialPose(inital_pose_r1)
         self._navigator_r2.setInitialPose(inital_pose_r2)
+        print("Done")
 
-    def _prompt_commands(self):
+    def _show_commands(self):
+        # Printing the possible commands to the user
         self.get_logger().info("Choose one of the possible commands:")
         self.get_logger().info("1. Set robot namespace.")
         self.get_logger().info("2. Set robot goal.")
-        
+        prompt = int(input())
+        # Running the correct command
+        if case == 1 :
+            self._set_robot_namespace()
+        elif case == 2 :
+            self._set_robot_goal()
+            
     def _set_robot_namespace(self):
-        self.get_logger().info("Prompt the robot namespace [/robot1 or /robot2]:")
+        self.get_logger().info("Prompt the robot namespace:")
         self._namespace = input()
         
     def _set_robot_goal(self):
@@ -62,7 +74,9 @@ class RobotUI(Node):
         self.get_logger().info("Prompt the orientation:")
         orientation = float(input())
 
-        self._pose = [posx, posy, 0, 0, 0, 0, 1]
+        self._pose.position.x = posx
+        self._pose.position.y = posy
+        self._pose.orientation.w = orientation
 
         if self._namespace == "/robot1":
             self._navigator_r1.goToPose(self._pose)
@@ -79,11 +93,11 @@ class RobotUI(Node):
                         self._navigator_r1.cancelNav()
             
             result = self._navigator_r1.getResult()
-            if result == NavigationResult.SUCCEEDED:
+            if result == TaskResult.SUCCEEDED:
                 print('Goal succeeded')
-            elif result == NavigationResult.CANCELED:
+            elif result == TaskResult.CANCELED:
                 print('Goal canceled')
-            elif result == NavigationResult.FAILED:
+            elif result == TaskResult.FAILED:
                 print('Goal failed')
             else:
                 print('Invalid return status')
@@ -103,11 +117,11 @@ class RobotUI(Node):
                         self._navigator_r2.cancelNav()
             
             result = self._navigator_r2.getResult()
-            if result == NavigationResult.SUCCEEDED:
+            if result == TaskResult.SUCCEEDED:
                 print('Goal succeeded')
-            elif result == NavigationResult.CANCELED:
+            elif result == TaskResult.CANCELED:
                 print('Goal canceled')
-            elif result == NavigationResult.FAILED:
+            elif result == TaskResult.FAILED:
                 print('Goal failed')
             else:
                 print('Invalid return status')
@@ -118,11 +132,10 @@ def main(args=None):
 
     # Creating to RobotUI
     robot_ui = RobotUI()
+    robot_ui._set_initial_poses()
 
     while(1):
-        robot_ui._prompt_commands()
-        robot_ui._set_robot_namespace()
-        robot_ui._set_robot_goal()
+        robot_ui._show_commands()
 
     # Spinning to prevent exit
     rclpy.spin(robot_ui)
