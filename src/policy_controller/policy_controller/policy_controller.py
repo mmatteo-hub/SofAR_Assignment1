@@ -14,27 +14,20 @@ class PolicyController(Node):
     def __init__(self):
         super().__init__('policy_controller')
         
+        # Initializing variables
         self._poses_1 = None
         self._poses_2 = None
         self._next_intersection_pose = None
-        # Creating a publisher that receives messages of type String
-        # over a topic named 'topic' with the specified callback.
+        self._is_robot1_waiting = False
+        
+        # Receiving the global plan
         self.sub_r1 = self.create_subscription(Path, 'robot1/received_global_plan', self.on_robot1_path, 10)
         self.sub_r2 = self.create_subscription(Path, 'robot2/received_global_plan', self.on_robot2_path, 10)
-        # Cretting a publisher for each robot to store the goal pose
-        self.sub_r1_goal = self.create_subscription(PoseStamped, '/robot1/goal_pose', self.robot1_goal, 10)
-        self.sub_r2_goal = self.create_subscription(PoseStamped, '/robot2/goal_pose', self.robot2_goal, 10)
-        # Odom subscribers
+        # Receiving the position of the robot
         self.sub_odom1 = self.create_subscription(Odometry, 'robot1/odom', self.on_robot1_odom, 10)
         self.sub_odom2 = self.create_subscription(Odometry, 'robot2/odom', self.on_robot2_odom, 10)
         # Wait client
         self._action_client = ActionClient(self, Wait, '/robo1/wait')
-
-    def robot1_goal(self, msg):
-        self._goal1_pose = msg.pose
-
-    def robot2_goal(self, msg):
-        self._goal2_pose = msg.pose
         
 
     def on_robot1_path(self, msg):
@@ -43,7 +36,7 @@ class PolicyController(Node):
         self.destroy_subscription(self.sub_r1)
         # Obtaining the poses
         self._poses_1 = PolicyController.parse_poses_from_msg(msg)
-        print("Path from robot1 received\n")
+        print("Path from robot1 received")
         # Checks if the intersection can be computed and computes it
         self.check_and_intersect()
         
@@ -54,7 +47,7 @@ class PolicyController(Node):
         self.destroy_subscription(self.sub_r2)
         # Obtaining the poses
         self._poses_2 = PolicyController.parse_poses_from_msg(msg)
-        print("Path from robot2 received\n")
+        print("Path from robot2 received")
         # Checks if the intersection can be computed and computes it
         self.check_and_intersect()
         
@@ -71,7 +64,7 @@ class PolicyController(Node):
         # Check if both the paths are received
         if self._poses_1 == None or self._poses_2 == None :
             return
-        print("Both path received\n")
+        print("Both path received")
         
         # Computing the intersections of the two paths
         intersections = []
@@ -89,14 +82,14 @@ class PolicyController(Node):
                     intersections.append([id1, id2])
                   
         # Logging intersections  
-        print("Found " + str(len(intersections)) + " intersections.\n")
+        print("Found " + str(len(intersections)) + " intersections.")
         for inters in intersections :
             i1 = inters[0]
             i2 = inters[1]
-            print("First segment:\n")
-            print(str(self._poses_1[i1]) + " " + str(self._poses_1[i1+1]) + "\n")
-            print("Second segment:\n")
-            print(str(self._poses_2[i2]) + " " + str(self._poses_2[i2+1]) + "\n")
+            print("First segment:")
+            print(str(self._poses_1[i1]) + "\n" + str(self._poses_1[i1+1]))
+            print("Second segment:")
+            print(str(self._poses_2[i2]) + "\n" + str(self._poses_2[i2+1]))
             
         # Storing the next intersection
         if len(intersections) > 0 :
@@ -104,26 +97,38 @@ class PolicyController(Node):
             
             
     def on_robot1_odom(self, msg):
+        # Storing the last received position of the robot 1
+        self._last_pose1 = msg.pose.pose.position
+        
+        # Check if there is a next intersection
         if self._next_intersection_pose == None :
             return
             
-        self._check_and_wait_or_go(msg.pose.pose.position)
+        self._check_and_wait_or_go()
 
     def on_robot2_odom(self, msg):
-        self._last_pose2 = msg.pose
-    
-    def _on_wait_finish(self, future):
-        self._check_and_wait_or_go(self.last_pose1)
+        # Storing the last received position of the robot 1
+        self._last_pose2 = msg.pose.pose.position
 
-    def _check_and_wait_or_go(self, current_pos):
-        if is_same_pose_threshold(current_pos, self._poses_1[self._next_intersection_pose], 0.16) :
+    # NB. This always checks for robot1
+    def _check_and_wait_or_go(self):
+        # Check if the robot is near enough to the intersection
+        if not self._is_robot1_waiting and is_same_pose_threshold(self._last_pose1, self._poses_1[self._next_intersection_pose], 0.16) :
             print("Intersection pose reached!")
-            self.last_pose1 = current_pos
-            if is_same_pose_threshold(self.last_pose1, self._last_pose2, 0.25):
+            # Check if the two robots are near enough
+            if is_same_pose_threshold(self._last_pose1, self._last_pose2, 0.25):
+                print("Starting to wait...")
+                # Making the robot 1 wait
+                self._is_robot1_waiting = True
                 _goal = Wait.Goal()
-                _goal.sec = 3
+                _goal.time.sec = 3
                 future = self._action_client.send_goal_async(_goal)
                 future.add_done_callback(self._on_wait_finish)
+                
+    def _on_wait_finish(self, future):
+        print("Finished waiting")
+        self._is_robot1_waiting = False
+        self._check_and_wait_or_go()
 
 # Return true if line segments AB and CD intersect
 def intersect(a,b,c,d):
