@@ -1,144 +1,86 @@
-import rclpy
-from rclpy.node import Node
-from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
-from rclpy.duration import Duration
+
+
+#! /usr/bin/env python3
+# Copyright 2021 Samsung Research America
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
 from geometry_msgs.msg import PoseStamped
+from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
+import rclpy
 
-class RobotUI(Node):
 
-    def __init__(self):
-        super().__init__('robot_ui')
-        # Creating a helper for the navigation stack
-        self._navigator_r1 = BasicNavigator()
-        self._navigator_r2 = BasicNavigator()
+"""
+Basic navigation demo to follow a given path
+"""
 
-    def _set_initial_poses(self):
-        # Before using nav2, it is necesary to check that it is active        
-        print("Waiting for Nav2 to be active...")
-        self._navigator_r1.waitUntilNav2Active()
-        self._navigator_r2.waitUntilNav2Active()
-        print("Done")
-        
-        print("Setting initial poses... ")
-        inital_pose_r1 = PoseStamped()
-        inital_pose_r2 = PoseStamped()
+def main():
+    rclpy.init()
 
-        inital_pose_r1.header.frame_id = 'map'
-        inital_pose_r2.header.frame_id = 'map'
+    navigator = BasicNavigator()
+    
+    # Go to our demos first goal pose
+    initial_pose = PoseStamped()
+    initial_pose.header.frame_id = 'map'
+    initial_pose.header.stamp = navigator.get_clock().now().to_msg()
+    initial_pose.pose.position.x = -2.0
+    initial_pose.pose.position.y = -0.5
+    initial_pose.pose.orientation.w = -1.5
 
-        inital_pose_r1.header.stamp = self._navigator_r1.get_clock().now().to_msg()
-        inital_pose_r2.header.stamp = self._navigator_r1.get_clock().now().to_msg()
+    # Go to our demos first goal pose
+    goal_pose = PoseStamped()
+    goal_pose.header.frame_id = 'map'
+    goal_pose.header.stamp = navigator.get_clock().now().to_msg()
+    goal_pose.pose.position.x = 2.0
+    goal_pose.pose.position.y = 1.0
+    goal_pose.pose.orientation.w = 0.0
 
-        inital_pose_r1.pose.position.x = -5.0
-        inital_pose_r1.pose.position.y = 1.0
-        inital_pose_r1.pose.position.z = 0.1
-        inital_pose_r1.pose.orientation.x = 0.0
-        inital_pose_r1.pose.orientation.y = 0.0
-        inital_pose_r1.pose.orientation.z = 0.0
-        inital_pose_r1.pose.orientation.w = 1.0
+    # Sanity check a valid path exists
+    path = None
+    while path == None:
+        input("Prompt now")
+        path = navigator.getPath(initial_pose, goal_pose)
 
-        inital_pose_r2.pose.position.x = 5.0
-        inital_pose_r2.pose.position.y = -1.0
-        inital_pose_r2.pose.position.z = 0.1
-        inital_pose_r1.pose.orientation.x = 0.0
-        inital_pose_r2.pose.orientation.y = 0.0
-        inital_pose_r2.pose.orientation.z = 0.0
-        inital_pose_r2.pose.orientation.w = 1.0
-        
-        self._navigator_r1.setInitialPose(inital_pose_r1)
-        self._navigator_r2.setInitialPose(inital_pose_r2)
-        print("Done")
+    # Follow path
+    navigator.followPath(path)
 
-    def _show_commands(self):
-        # Printing the possible commands to the user
-        self.get_logger().info("Choose one of the possible commands:")
-        self.get_logger().info("1. Set robot namespace.")
-        self.get_logger().info("2. Set robot goal.")
-        prompt = int(input())
-        # Running the correct command
-        if case == 1 :
-            self._set_robot_namespace()
-        elif case == 2 :
-            self._set_robot_goal()
+    i = 0
+    while not navigator.isTaskComplete():
+        # Printing only a feedback every 5
+        # To not spam the console
+        i += 1
+        if not i%5 == 0 :
+            continue
             
-    def _set_robot_namespace(self):
-        self.get_logger().info("Prompt the robot namespace:")
-        self._namespace = input()
-        
-    def _set_robot_goal(self):
+        # Do something with the feedback
+        feedback = navigator.getFeedback()
+        if feedback :
+            print('Estimated distance: '+'{0:.3f}'.format(feedback.distance_to_goal))
 
-        self.get_logger().info("Prompt the x position:")
-        posx = float(input())
-        self.get_logger().info("Prompt the y position:")
-        posy = float(input())
-        self.get_logger().info("Prompt the orientation:")
-        orientation = float(input())
+    # Do something depending on the return code
+    result = navigator.getResult()
+    if result == TaskResult.SUCCEEDED:
+        print('Goal succeeded!')
+    elif result == TaskResult.CANCELED:
+        print('Goal was canceled!')
+    elif result == TaskResult.FAILED:
+        print('Goal failed!')
+    else:
+        print('Goal has an invalid return status!')
 
-        self._pose.position.x = posx
-        self._pose.position.y = posy
-        self._pose.orientation.w = orientation
+    #navigator.lifecycleShutdown()
 
-        if self._namespace == "/robot1":
-            self._navigator_r1.goToPose(self._pose)
-
-            i = 0
-
-            while not self._navigator_r1.isNavComplete():
-                i = i + 1
-                feedback = self._navigator_r1.getFeedback()
-                if feedback and i % 5 == 0:
-                    print('Distance remaining: ' + '{:.2f}'.format(feedback.distance_remaining) + ' m')
-
-                    if(Duration.from_msg(feedback.navigation_time) > Duration(seconds=600.0)):
-                        self._navigator_r1.cancelNav()
-            
-            result = self._navigator_r1.getResult()
-            if result == TaskResult.SUCCEEDED:
-                print('Goal succeeded')
-            elif result == TaskResult.CANCELED:
-                print('Goal canceled')
-            elif result == TaskResult.FAILED:
-                print('Goal failed')
-            else:
-                print('Invalid return status')
-
-        elif self._namespace == "/robot2":
-            self._navigator_r2.goToPose(self._pose)
-
-            i = 0
-
-            while not self._navigator_r2.isNavComplete():
-                i = i + 1
-                feedback = self._navigator_r2.getFeedback()
-                if feedback and i % 5 == 0:
-                    print('Distance remaining: ' + '{:.2f}'.format(feedback.distance_remaining) + ' m')
-
-                    if(Duration.from_msg(feedback.navigation_time) > Duration(seconds=600.0)):
-                        self._navigator_r2.cancelNav()
-            
-            result = self._navigator_r2.getResult()
-            if result == TaskResult.SUCCEEDED:
-                print('Goal succeeded')
-            elif result == TaskResult.CANCELED:
-                print('Goal canceled')
-            elif result == TaskResult.FAILED:
-                print('Goal failed')
-            else:
-                print('Invalid return status')
-
-def main(args=None):
-    # Initializing the Ros2 library
-    rclpy.init(args=args)
-
-    # Creating to RobotUI
-    robot_ui = RobotUI()
-    robot_ui._set_initial_poses()
-
-    while(1):
-        robot_ui._show_commands()
-
-    # Spinning to prevent exit
-    rclpy.spin(robot_ui)
+    exit(0)
 
 
 if __name__ == '__main__':
