@@ -39,8 +39,8 @@ def generate_launch_description():
 
     # Names and poses of the robots
     robots = [
-        {'name': 'robot1', 'x_pose': -5.0, 'y_pose': 1.0, 'z_pose': 0.1},
-        {'name': 'robot2', 'x_pose': 5.0, 'y_pose': -1.0, 'z_pose': 0.1}]
+        {'name': 'robot1', 'x_pose': -4.0, 'y_pose': 0.0, 'z_pose': 0.1},
+        {'name': 'robot2', 'x_pose': -1.0, 'y_pose': 2.0, 'z_pose': 0.1}]
 
     # Simulation settings
     world = LaunchConfiguration('world')

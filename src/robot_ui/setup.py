@@ -7,6 +7,7 @@ _maintainer_email = ['4636216@studenti.unige.it','4670261@studenti.unige.it','46
 data_files = []
 data_files.append(('share/ament_index/resource_index/packages', ['resource/' + package_name]))
 data_files.append(('share/' + package_name + '/launch', ['launch/ui_launch.py']))
+data_files.append(('share/' + package_name + '/launch', ['launch/ui_launch_single.py']))
 data_files.append(('share/' + package_name, ['package.xml']))
 
 setup(
@@ -23,7 +24,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'robot_ui = robot_ui.robot_ui:main',
+            'robot_ui = robot_ui.robot_ui:main'
         ],
     },
 )
