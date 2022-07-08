@@ -11,7 +11,7 @@ Each robot involded need, of course, to localize properly itself in the environm
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="4%" height="4%"> Robot: TurtleBot3 Waffle
 
 <img src="https://user-images.githubusercontent.com/62358773/174429109-3092766c-5d64-4d7b-8aae-002553882374.png" width="15%" height="15%">
-The model of robot used is the _TurtleBot3 Waffle_. TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping.
+The model of the robot used is the TurtleBot3 Waffle. TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping.
 In the assignment we used two of them: they are provided with sensors all around the base platform and they are 3 DoF (Degree of Freedom) robots.
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%"> Softwares used
