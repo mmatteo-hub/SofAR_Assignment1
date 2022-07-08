@@ -29,7 +29,9 @@ The program is composed of different nodes running at the same time so in order 
     * Robot models;
   * all the `source` commands for the `.bashrc` file;
   * all the _launch_ commands for the nodes used. The nodes are launched in different terminals automatically:
-    * __
+    * _Nav2_ node which in turn starts many nodes;
+    * _robot controller_ node for the _robot1_;
+    * _robot controller_ node for the _robot2_;
     * _policy controller_ node;
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177952062-a1a97fb2-a7fa-449e-90d3-bf1fae4da02f.png" width="5%" height="5%"> Theory behind the nodes
