@@ -54,3 +54,11 @@ In fact, to improve our assignment we gave the robot a certain priority (that ca
   In this way, when the robots are in a possible collision behaviour this node stops the lower priority robot until the path is free again.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177957979-a9681dd1-55bf-4985-99c0-ead2c7289b1b.png" width="4%" height="4%"> General graph obtained
+
+Here we present a schematic graph of the architecture used in the assigment. We showed only the most relevant topics, actions and servers used and we highlighted the nodes developed.
+
+All the minor nodes that _Nav2_ implies and runs by itself are not shown here for sake of clarity and it is meant included in the general _Nav2_ node.
+
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/62358773/177977788-e1b46b81-0dbc-4fec-bba2-aa0792067a51.jpeg" width="70%" height="70%">
+</p>
