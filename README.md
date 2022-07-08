@@ -42,22 +42,21 @@ The program is composed of different nodes running at the same time so in order 
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174600732-bb04a560-dffe-49b4-b2fd-2dd669c96ac5.png" width="4%" height="4%">
 
-_Nav2_, ([documentation](https://navigation.ros.org/index.html)), is the main node running in the assignment and all the other nodes depend from it. It is responsible of the pose estimation of the two robots in the environment so that both robots can check the correspondences between the _real_ environment from Gazebo and the map of the environment and they can localize themselves even if the pose given is a wrong one.
-Moreover, this node provides the possibility of give a goal to each robot so that they can compute a path and reach this goal.
-In this case it is very important the provided _cost map_ of the environment which allows the robot avoid getting too close to the obstacles. In order to be safer in this way the robot is also provided a _local map_ which keeps it farer from the local obstacles: this is important when the environment is provided with dynamics obstacles that cannot be predicted by the global path the robot uses.
+_Nav2_, ([documentation](https://navigation.ros.org/index.html)), is the main node running in the assignment and all the other nodes depend from it. It is responsible of the pose estimation of the two robots in the environment so that both robots can check the correspondences between the _real_ environment from Gazebo and the map of the environment; they can and have to localize themselves even if the pose given is a wrong one.
+Moreover, this node provides the possibility of giving a goal to each robot so that they can compute a path and reach this goal. In this case it is very important the provided _cost map_ of the environment which allows the robot avoid getting too close to the obstacles. In order to be safer in this way the robot is also provided a _local map_ which keeps it farer from the local obstacles: this is important when the environment is provided with dynamics obstacles that cannot be predicted by the global path the robot uses.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177954650-6e82424f-baa2-449a-877c-dd31886a8944.png" width="4%" height="4%"> Custom nodes
 
 The main node we relate with is the _Nav2_ node. In addition we provided different nodes to communicate with the robots and to allow the robots to communicate between each other. In particular:
-* 2 nodes, _robot controller_ are used to drive the robot ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/robot_controller/robot_controller/robot_controller.py)), each one with a proper namespace: in this case the two nodes are distinguish node, one referring to the first robot and the other referring to the other one. They are responsible of sending messages and commands to the robot to allow them to move into the environment independently.
-* one node, _policy controller_ ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/policy_controller/policy_controller/policy_controller.py)), is resposible of the communication between the two robots. This node allows each robot to know the position of the other one and to manage the way the robot move. 
+* 2 nodes, _robot controller_ are used to drive the robot ([src](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/robot_controller/robot_controller/robot_controller.py)), each one with a proper namespace: in this case the two nodes are distinguish node, one referring to the first robot and the other referring to the other one. They are responsible of sending messages and commands to the robot to allow them to move into the environment independently.
+* one node, _policy controller_ ([src](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/policy_controller/policy_controller/policy_controller.py)), is resposible of the communication between the two robots. This node allows each robot to know the position of the other one and to manage the way the robot move. 
 In fact, to improve our assignment we gave the robot a certain priority (that can be changed):
   * the _robot1_ has higher priority;
   * the _robot2_ has lower priority;
   
   In this way, when the robots are in a possible collision behaviour this node stops the lower priority robot until the path is free again.
 
-* one node, _robot navigator_ ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/my_commander/my_commander/robot_navigator.py)) which provides an API that handles all the ROS2 and Action Server tasks for you such that you can focus on building an application leveraging the capabilities of _Nav2_. This node is the _Simple Commander API_ ([link](https://navigation.ros.org/commander_api/index.html)) provided by the _Nav2_ but adapted to this problem with multiple robots.
+* one node, _robot navigator_ ([src](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/my_commander/my_commander/robot_navigator.py)) which provides an API that handles all the ROS2 and Action Server tasks for you such that you can focus on building an application leveraging the capabilities of _Nav2_. This node is the _Simple Commander API_ ([link](https://navigation.ros.org/commander_api/index.html)) provided by the _Nav2_ but adapted to this problem with multiple robots.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177957979-a9681dd1-55bf-4985-99c0-ead2c7289b1b.png" width="4%" height="4%"> General graph obtained
 
