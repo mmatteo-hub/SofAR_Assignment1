@@ -42,8 +42,8 @@ The program is composed of different nodes running at the same time so in order 
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174600732-bb04a560-dffe-49b4-b2fd-2dd669c96ac5.png" width="4%" height="4%">
 
-_Nav2_, ([documentation](https://navigation.ros.org/index.html)), is the main node running in the assignment and all the other nodes depend from it. It is responsible of the pose estimation of the two robots in the environment so that both robots can check the correspondences between the _real_ environment from Gazebo and the map of the environment and they an localize themselves even is the pose given is a wrong one.
-Moreover, this node provide the possibility of give a goal to each robot so that they can compute a path and reach this goal.
+_Nav2_, ([documentation](https://navigation.ros.org/index.html)), is the main node running in the assignment and all the other nodes depend from it. It is responsible of the pose estimation of the two robots in the environment so that both robots can check the correspondences between the _real_ environment from Gazebo and the map of the environment and they can localize themselves even if the pose given is a wrong one.
+Moreover, this node provides the possibility of give a goal to each robot so that they can compute a path and reach this goal.
 In this case it is very important the provided _cost map_ of the environment which allows the robot avoide getting too close to the obstacles. In order to be safer in this way the robot is also provided a _local map_ which keeps it farer from the local obstacles: this is important when the environment is provided with dynamics obstacles that cannot be predicted by the global path the robot uses.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177954650-6e82424f-baa2-449a-877c-dd31886a8944.png" width="4%" height="4%"> Custom nodes
