@@ -147,6 +147,7 @@ class PolicyController(Node):
             self.request_toggle_wait(False)
             # Resetting the flag
             self._robot_waiting = False
+
             
     def is_near_intersection(self, robot_id):
         # Storing the robot position to optimize

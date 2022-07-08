@@ -8,6 +8,11 @@
   <maintainer email="4670261@studenti.unige.it">ilmusu</maintainer>
   <maintainer email="4670964@studenti.unige.it">danipari</maintainer>
   <license>TODO: License declaration</license>
+  
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>rcl_interfaces</exec_depend>
+  <exec_depend>std_srvs</exec_depend>
+  <exec_depend>nav_msgs</exec_depend>
 
   <test_depend>ament_copyright</test_depend>
   <test_depend>ament_flake8</test_depend>
