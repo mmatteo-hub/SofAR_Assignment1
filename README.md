@@ -56,7 +56,7 @@ In fact, to improve our assignment we gave the robot a certain priority (that ca
   
   In this way, when the robots are in a possible collision behaviour this node stops the lower priority robot until the path is free again.
 
-* one node, _robot navigator_ ([src](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/my_commander/my_commander/robot_navigator.py)) which provides an API that handles all the ROS2 and Action Server tasks for you such that you can focus on building an application leveraging the capabilities of _Nav2_. This node is the _Simple Commander API_ ([link](https://navigation.ros.org/commander_api/index.html)) provided by the _Nav2_ but adapted to this problem with multiple robots.
+* one node, _robot navigator_ ([src](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/src/my_commander/my_commander/robot_navigator.py)) which provides an API that handles all the ROS2 and Action Server tasks for you such that you can focus on building an application leveraging the capabilities of _Nav2_. This node is the _Simple Commander API_ ([link](https://navigation.ros.org/commander_api/index.html)) provided by the _Nav2_ adapted to this to fit the problem with multiple robots.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177957979-a9681dd1-55bf-4985-99c0-ead2c7289b1b.png" width="4%" height="4%"> General graph obtained
 
