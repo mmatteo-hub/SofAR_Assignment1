@@ -14,7 +14,7 @@ Each robot involded need, of course, to localize properly itself in the environm
 The model of robot used is the _TurtleBot3 Waffle_. TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping.
 In the assignment we used two of them: they are provided with sensors all around the base platform and they are 3 DoF (Degree of Freedom) robots.
 
-## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%"> Software used
+## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%"> Softwares used
 For the assignment we used different softwares to simulate the behaviour of the robots:
 * _Gazebo_: used to simulate the real world the robots move into;
 * _Rviz_: to simulate what the robots see when moving in the environment:
