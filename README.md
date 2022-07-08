@@ -8,9 +8,9 @@
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="4%" height="4%"> Navigation of two independent robots moving in an environmnet by avoiding collision between each other through precedence management
 
-The assignmen concerns the possibility of driving two robots in a certain enviornment by setting a position they have to reach. The program has to manage the driving of the two robots by avoiding collision between each other robot or obstacles and managing a right of way between the agents acting.
+The assignment concerns the possibility of driving two robots in a certain enviornment by setting a position they have to reach. The program has to manage the driving of the two robots by avoiding collision between each other robot or obstacles and managing a right of way between the agents acting.
 
-Each robot involded need, of course, to localize properly itself in the environment.
+Each robot involded needs, of course, to localize properly itself in the environment.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="4%" height="4%"> Robot: TurtleBot3 Waffle
 
@@ -23,7 +23,7 @@ For the assignment we used different softwares to simulate the behaviour of the 
 * _Gazebo_: used to simulate the real world the robots move into;
 * _Rviz_: to simulate what the robots see when moving in the environment:
   * for _Rviz_ it is necessary that each robot has its own window, in fact for this software we need to open one window for each robot involved;
-* _ROS2_(Robot Operating System 2) galactic ([documentation](https://docs.ros.org/en/galactic/index.html)): this is the architecture used to communicate with the robots and let them to communicate between eachother.
+* _ROS2_(Robot Operating System 2) galactic ([documentation](https://docs.ros.org/en/galactic/index.html)): this is the architecture used to communicate with the robots and let them to communicate between each other.
 
 ## <img src="https://user-images.githubusercontent.com/62358773/175919787-96dfd662-af73-4ab6-a6ad-e7049ff1336e.png" width="5%" height="5%"> Program start
 The program is composed of different nodes running at the same time so in order to start the simulation and simplify all the starting process we provided just one executable file to run by `./run.sh` shell command ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/run.sh)):
