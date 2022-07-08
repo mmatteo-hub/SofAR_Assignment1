@@ -60,5 +60,5 @@ Here we present a schematic graph of the architecture used in the assigment. We 
 All the minor nodes that _Nav2_ implies and runs by itself are not shown here for sake of clarity and it is meant included in the general _Nav2_ node.
 
 <p align="center">
- <img src="https://user-images.githubusercontent.com/62358773/177977788-e1b46b81-0dbc-4fec-bba2-aa0792067a51.jpeg" width="70%" height="70%">
+ <img src="https://user-images.githubusercontent.com/62358773/178002917-f934c3cb-88be-403c-bd65-f0d8b5e19d5d.jpeg" width="70%" height="70%">
 </p>
