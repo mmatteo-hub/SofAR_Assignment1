@@ -12,8 +12,9 @@ This assignment is focused on developing an architecture that allows to navigate
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="4%" height="4%"> Robot: TurtleBot3 Waffle
 
-<img src="https://user-images.githubusercontent.com/62358773/174429109-3092766c-5d64-4d7b-8aae-002553882374.png" width="15%" height="15%">
+<img src="https://user-images.githubusercontent.com/62358773/174429109-3092766c-5d64-4d7b-8aae-002553882374.png" width="15%" height="15%"> </br>
 The software has been tested with the [TurtleBot3 Waffle](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) robot model, which is a small, affordable and programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping. This robot can run SLAM algorithms to build a map of the environment and use it to localize itself while navigating.
+
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%"> Softwares used
 For the assignment we used different softwares to simulate the behaviour of the robots:
