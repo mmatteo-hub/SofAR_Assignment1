@@ -22,7 +22,7 @@ For the assignment we used different softwares to simulate the behaviour of the 
 
 * _Rviz_: a visualization tool that allows inspect the simulation;
 
-* _ROS2 Galactic_ ([documentation](https://docs.ros.org/en/galactic/index.html)): an open-source and meta-operating system which provides a set of libraries and tools for building robot applications.
+* _ROS2 Galactic_ ([documentation](https://docs.ros.org/en/galactic/index.html)): an open-source and meta-operating system which provides a set of libraries and tools for building robot applications;
 
 * _Nav2_  ([documentation](https://navigation.ros.org/)): an architecture built on top of the ROS2 environment which aims to find a safe way to drive a mobile robot from point A to point B. 
 
