@@ -28,7 +28,7 @@ For the assignment we used different softwares to simulate the behaviour of the 
 ## <img src="https://user-images.githubusercontent.com/62358773/175919787-96dfd662-af73-4ab6-a6ad-e7049ff1336e.png" width="5%" height="5%"> Program start
 The program is composed of different nodes running at the same time so in order to start the simulation and simplify all the starting process we provided just one executable file to run by `./run.sh` shell command ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/run.sh)):
 * the `.sh` file contains:
-  * all the necessary `EXPORT commands for the simulation of:
+  * all the necessary `EXPORT` commands for the simulation of:
     * Gazebo world;
     * Robot models;
   * all the `source` commands for the `.bashrc` file;
