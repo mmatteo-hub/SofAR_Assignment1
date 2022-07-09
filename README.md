@@ -18,9 +18,9 @@ The software has been tested with the _TurtleBot3 Waffle_ ([specifications](http
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Software
 For the assignment we used different softwares to simulate the behaviour of the robots:
-* _Gazebo_: a 3-dimensional physics simulator used in robotics.
+* _Gazebo_: a 3-dimensional physics simulator used in robotics;
 
-* _Rviz_: a visualization tool that allows inspect the simulation.
+* _Rviz_: a visualization tool that allows inspect the simulation;
 
 * _ROS2 Galactic_ ([documentation](https://docs.ros.org/en/galactic/index.html)): an open-source and meta-operating system which provides a set of libraries and tools for building robot applications.
 
@@ -37,15 +37,15 @@ The collision avoidance behaviour is obtained using two costmaps: a global costm
 To obtain the derised behaviour it is necessary to launch all the previously mentioned software with the correct parameters. Therefore, in order to start the program we provide a shell script file, called `run.sh` ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/run.sh)), which automatically builds the packages and runs all the necessary tools.
 More precisely, this file contains:
  * all the necessary `EXPORT` commands for:
-   * Gazebo world models.
-   * Robot models.
- * all the necessary `source` commands.
+   * Gazebo world models;
+   * Robot models;
+ * all the necessary `source` commands;
  * all the _launch_ commands for the nodes used. 
   
 The nodes are launched in different terminals automatically:
- * The _Gazebo_, _Rviz_ and _Nav2_ processes and nodes.
- * Two _robot_controller_ nodes for the two robots inside the simulation.
- * The _policy_controller_ node;
+ * The _Gazebo_, _Rviz_ and _Nav2_ processes and nodes;
+ * Two _robot_controller_ nodes for the two robots inside the simulation;
+ * The _policy_controller_ node.
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177952062-a1a97fb2-a7fa-449e-90d3-bf1fae4da02f.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Custom Nodes Implementation
 As already said, the desired behaviour has been obtained through already existing nodes and custom nodes which need to be run simultaneously. In particular, the custom nodes are:
@@ -59,8 +59,8 @@ Since our simulation contains two robots, two different instances of the control
 Here we present a schematic graph of the architecture used in the assigment in which are highlighted only the most relevant topics, services and actions used and also the developed nodes. A more complete schema would include also all the nodes, topics, services and actions that are defined inside the Nav2 architecture but we decided to not show them on purpose for sake of clarity.
 
 In the graph, the arrows have the following meaning:
-* topic: the message is sent to the node in the direction of the arrow.
-* service: the service is provided by the node in the direction of the arrow.
+* topic: the message is sent to the node in the direction of the arrow;
+* service: the service is provided by the node in the direction of the arrow;
 * action: the action is provided by the node in the direction of the arrow.
 &nbsp;
 &nbsp;
