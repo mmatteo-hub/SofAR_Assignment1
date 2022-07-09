@@ -8,15 +8,12 @@
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="4%" height="4%"> Navigation of two independent robots moving in an environmnet by avoiding collision between each other through precedence management
 
-The assignment concerns the possibility of driving two robots in a certain enviornment by setting a position they have to reach. The program has to manage the driving of the two robots by avoiding collision between each other robot or obstacles and managing a right of way between the agents acting.
-
-Each robot involded needs, of course, to localize properly itself in the environment.
+This assignment is focused on developing an architecture that allows to navigate two robots inside a realistic environment while avoiding collisions. This behaviour has been obtained by developing a **"policy controller"** that dedices which, between the two robots, has the right of way in the case of a foreshadowed collision.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="4%" height="4%"> Robot: TurtleBot3 Waffle
 
 <img src="https://user-images.githubusercontent.com/62358773/174429109-3092766c-5d64-4d7b-8aae-002553882374.png" width="15%" height="15%">
-The model of the robot used is the TurtleBot3 Waffle. TurtleBot3 is a small, affordable, programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping.
-In the assignment we used two of them: they are provided with sensors all around the base platform and they are 3 DoF (Degree of Freedom) robots.
+The software has been tested with the [TurtleBot3 Waffle](https://emanual.robotis.com/docs/en/platform/turtlebot3/overview/) robot model, which is a small, affordable and programmable, ROS-based mobile robot for use in education, research, hobby, and product prototyping. This robot can run SLAM algorithms to build a map of the environment and use it to localize itself while navigating.
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%"> Softwares used
 For the assignment we used different softwares to simulate the behaviour of the robots:
