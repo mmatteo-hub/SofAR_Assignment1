@@ -40,7 +40,9 @@ More precisely, this file contains:
     * Gazebo world models;
     * Robot models;
   * all the necessary `source` commands;
-  * all the _launch_ commands for the nodes used. The nodes are launched in different terminals automatically:
+  * all the _launch_ commands for the nodes used. 
+
+The nodes are launched in different terminals automatically:
     * _Nav2_ node which in turn starts many nodes;
     * _robot controller_ node for the _robot1_;
     * _robot controller_ node for the _robot2_;
