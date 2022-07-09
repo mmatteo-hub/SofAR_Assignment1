@@ -56,12 +56,14 @@ Since our simulation contains two robots, two different instances of the control
 
 ### <img src="https://user-images.githubusercontent.com/62358773/177957979-a9681dd1-55bf-4985-99c0-ead2c7289b1b.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;Implementation Graph
 
-Here we present a schematic graph of the architecture used in the assigment. We showed only the most relevant topics, actions and servers used and we highlighted the nodes developed.
+Here we present a schematic graph of the architecture used in the assigment in which are highlighted only the most relevant topics, services and actions used and also the developed nodes. A more complete schema would include also all the nodes, topics, services and actions that are defined inside the Nav2 architecture but we decided to not show them on purpose for sake of clarity.
 
-All the minor nodes that _Nav2_ implies and runs by itself are not shown here for sake of clarity and it is meant included in the general _Nav2_ node.
-
-In the graph the arrow goes the same direction of the message passed by the topic, action or server used.
-<div style="height: 100px"></div>
+In the graph, the arrows have the following meaning:
+* topic: the message is sent to the node in the direction of the arrow.
+* service: the service is provided by the node in the direction of the arrow.
+* action: the action is provided by the node in the direction of the arrow.
+&nbsp;
+&nbsp;
 <p align="center">
  <img src="https://user-images.githubusercontent.com/62358773/178008913-62c0766e-f504-4158-947e-a9588727666e.jpeg" width="70%" height="70%">
 </p>
