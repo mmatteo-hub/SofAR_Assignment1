@@ -65,5 +65,5 @@ In the graph, the arrows have the following meaning:
 &nbsp;
 &nbsp;
 <p align="center">
- <img src="https://user-images.githubusercontent.com/62358773/178008913-62c0766e-f504-4158-947e-a9588727666e.jpeg" width="70%" height="70%">
+ <img src="https://user-images.githubusercontent.com/62358773/178150422-3528e619-daf3-4cdf-b6a7-efed1ab4d1e4.jpeg" width="70%" height="70%">
 </p>
