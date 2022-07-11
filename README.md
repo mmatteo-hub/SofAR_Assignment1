@@ -6,7 +6,7 @@
 
 ## <img src="https://user-images.githubusercontent.com/62358773/177956928-fc3638f9-abf1-4cd8-8437-4733088c0c08.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Assignment specifications
 
-### <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;Navigation of two independent robots moving in an environmnet by avoiding collision between each other through precedence management
+### <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp; Navigation of two independent robots moving in a known environmnet by avoiding collision between each other through precedence management
 
 This assignment is focused on developing an architecture that allows two robots to navigate inside a real-world environment while avoiding collisions.
 In particular, the robots must avoid collision between each other by giving the right of way according to a policy rule.
