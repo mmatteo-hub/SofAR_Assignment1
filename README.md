@@ -8,7 +8,9 @@
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429243-6f4be968-e447-4a71-a49f-c4563931c7e5.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;Navigation of two independent robots moving in an environmnet by avoiding collision between each other through precedence management
 
-This assignment is focused on developing an architecture that allows two robots to navigate inside a realistic environment while avoiding collisions (with both the environment and robots). This behaviour has been obtained by developing a _policy controller_ that dedices which, between the two robots, has the right of way in the case of a foreshadowed collision.
+This assignment is focused on developing an architecture that allows two robots to navigate inside a real-world environment while avoiding collisions.
+In particular, the robots must avoid collision between each other by giving the right of way according to a policy rule.
+This behavior is obtained through a _policy controller_ which enforces the policy rule and decides which one, between the two robots, has the right of way in case they reach an intersection at the same time.
 
 ### <img src="https://user-images.githubusercontent.com/62358773/174429200-def1a393-e34d-494f-978f-9591aa7d9e97.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;TurtleBot3 Waffle Robot
 
@@ -28,10 +30,9 @@ For the assignment we used different softwares to simulate the behaviour of the 
 
 
 ###  <img src="https://user-images.githubusercontent.com/62358773/174600732-bb04a560-dffe-49b4-b2fd-2dd669c96ac5.png" width="4%" height="4%">&nbsp;&nbsp;&nbsp;Nav2
-The Nav2 project is the spiritual successor of the ROS Navigation Stack and aims to find a safe way to drive a mobile robot from point A to point B. This includes complete dynamic path planning, avoid obstacles, compute velocities for motors and structure recovery behaviours.</br>
-This architecture uses behaviour trees (BT) to call modular servers to complete an action: compute a path, control effort, recovery, or any other navigation related action. These are each saparate nodes that communicate with the behaviour three over a ROS action server.</br>
-Using the BT modules provided by Nav2 it is possible to localize the robot in the environment and make it navigate to its destination, or goal, even if the localization is not perferct.</br>
-The collision avoidance behaviour is obtained using two costmaps: a global costmap which includes all the objects in the enviroment and a local costmap which is updated more frequently and keeps track only of the objects near the robot.
+The Nav2 project is composed of a set of libraries which use ROS2 as the middleware to communicate with the hardware of the robot. The aim is to be able to provide an interface to be used to safely navigate a robot between two points. Using the Nav2 architecture it is possible to localize the robot in the environment and make it navigate to its destination, or goal, even if the localization is not perferct. </br>
+In this context, the flow of task execution is defined by Behavior Trees which are, in fact, a tree structure of tasks to be completed: it creates a more human-understandable framework for defining a state machine application with many states.</br>
+Generally, each node inside the Behavior Tree is linked to a ROS2 action server to complete an action: compute a path, control effort, recovery, or any other navigation related action.
 
 ## <img src="https://user-images.githubusercontent.com/62358773/175919787-96dfd662-af73-4ab6-a6ad-e7049ff1336e.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Program Start
 To obtain the derised behaviour it is necessary to launch all the previously mentioned software with the correct parameters. Therefore, in order to start the program we provide a shell script file, called `run.sh` ([code](https://github.com/mmatteo-hub/SofAR_Assignment1/blob/main/run.sh)), which automatically builds the packages and runs all the necessary tools.
