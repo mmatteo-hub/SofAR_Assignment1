@@ -16,6 +16,7 @@ Follow these steps:
 * `mkdir -p ~/ros_ws_bridge/src`;
 * `cd ~/ros_ws_bridge/src`;
 * `git clone https://github.com/ros2/ros1_bridge.git` to clone the entire repository;
+* `cd ros1_bridge`
 * `git checkout galactic` to switch to the galactic branch;
 * `cd ~/ros_ws_bridge`;
 
