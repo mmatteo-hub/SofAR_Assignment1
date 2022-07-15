@@ -38,6 +38,10 @@ Rename one file:
 
 If the command does not work, try by renaming the file from the files.
 
+Just do these two steps to avoid dependencies error:
+* `sudo apt remove ros-galactic-controller-mamager-msgs`
+* `sudo apt install ros-galactic-controller-mamager-msgs`
+
 Now we start the building of the repository by: </br>
 * `colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
 
