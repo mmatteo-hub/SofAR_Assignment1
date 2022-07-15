@@ -36,6 +36,8 @@ Rename one file:
 * `cd /opt/ros/galactic/lib/`
 * `mv liburdfdom_model_state.so.1.0 liburdfdom_model_state.so.1.0_RENAMED`
 
+If the command does not work, try by renaming the file from the files.
+
 Now we start the building of the repository by: </br>
 * `colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
 
