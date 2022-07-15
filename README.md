@@ -3,7 +3,7 @@
 ## <img src="https://user-images.githubusercontent.com/62358773/177950955-29f674e4-edee-4e5a-a7bc-fd5b10494816.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Software
 Need to install:
 * [_ROS2 galactic_](https://docs.ros.org/en/galactic/index.html) on Ubuntu 20.04;
-* [_ROS1 melodic_](http://wiki.ros.org/noetic/Installation/Ubuntu) on Ubuntu 20.04;
+* [_ROS1 noetic](http://wiki.ros.org/noetic/Installation/Ubuntu) on Ubuntu 20.04;
 
 ## Comment the sources of the `.bashrc` file
 Before starting we need to comment the `source` default command set in the `.bashrc` file. </br>
