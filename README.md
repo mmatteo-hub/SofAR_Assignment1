@@ -24,6 +24,33 @@ Follow these steps:
 We firstly need to source the ROS2 with:
 * `source /opt/ros/galactic/setup.bash`;
 
+### Prerequisites
+
+In order to run the bridge you need to either:
+
+* get [prebuilt binaries](https://github.com/ros2/ros2/releases) or
+* build the bridge as well as the other ROS 2 packages from source.
+
+After that you can run both examples described below.
+
+For all examples you need to source the environment of the install space where the bridge was built or unpacked to.
+Additionally you will need to either source the ROS 1 environment or at least set the `ROS_MASTER_URI` and run a `roscore`.
+
+The following ROS 1 packages are required to build and use the bridge:
+* `catkin`
+* `roscpp`
+* `roslaunch` (for `roscore` executable)
+* `rosmsg`
+* `std_msgs`
+* as well as the Python package `rospkg`
+
+To run the following examples you will also need these ROS 1 packages:
+* `rosbash` (for `rosrun` executable)
+* `roscpp_tutorials`
+* `rospy_tutorials`
+* `rostopic`
+* `rqt_image_view`
+
 Now we have to install all the requirements without the ROS bridge by </br>
 * `colcon build --symlink-install --packages-skip ros1_bridge`
 
