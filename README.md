@@ -20,10 +20,6 @@ Follow these steps:
 * `git checkout galactic` to switch to the galactic branch;
 * `cd ~/ros_ws_bridge`;
 
-## Build the bridge from source
-We firstly need to source the ROS2 with:
-* `source /opt/ros/galactic/setup.bash`;
-
 ### Prerequisites
 
 In order to run the bridge you need to either:
@@ -50,6 +46,10 @@ To run the following examples you will also need these ROS 1 packages:
 * `rospy_tutorials`
 * `rostopic`
 * `rqt_image_view`
+
+## Build the bridge from source
+We firstly need to source the ROS2 with:
+* `source /opt/ros/galactic/setup.bash`;
 
 Now we have to install all the requirements without the ROS bridge by </br>
 * `colcon build --symlink-install --packages-skip ros1_bridge`
