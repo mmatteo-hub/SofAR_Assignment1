@@ -32,6 +32,10 @@ Then we source the ROS1 and ROS2 with these commands:
 * `source /opt/ros/galactic/setup.bash`;
 * `source install/local_setup.bash`.
 
+Rename one file:
+* `cd /opt/ros/galactic/lib/`
+* `mv liburdfdom_model_state.so.1.0 liburdfdom_model_state.so.1.0_RENAMED`
+
 Now we start the building of the repository by: </br>
 * `colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
 
