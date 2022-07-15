@@ -33,16 +33,6 @@ Then we source the ROS1 and ROS2 with these commands:
 * `source /opt/ros/galactic/setup.bash`;
 * `source install/local_setup.bash`.
 
-Rename one file:
-* `cd /opt/ros/galactic/lib/`
-* `mv liburdfdom_model_state.so.1.0 liburdfdom_model_state.so.1.0_RENAMED`
-
-If the command does not work, try by renaming the file from the files.
-
-Just do these two steps to avoid dependencies error:
-* `sudo apt remove ros-galactic-controller-manager-msgs`
-* `sudo apt install ros-galactic-controller-manager-msgs`
-
 Now we start the building of the repository by: </br>
 * `colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
 
