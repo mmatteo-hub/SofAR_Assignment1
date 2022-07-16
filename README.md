@@ -76,3 +76,16 @@ Now we start the building of the repository by: </br>
 
 * Shell N: (just to run a node)
   * In order to run a node to be mapped from ROS1 to ROS2 or ROS2 to ROS1, just source the shell for the ROS version needed and run it.
+
+## <img src="https://user-images.githubusercontent.com/62358773/179344919-f519fcd2-39b7-4b9e-b4d9-59d10090821d.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Connection between different devices
+In order to connect two devices, one running ROS1 and another running ROS2 we have to follow few step:
+* connect both devices to the same Wi-Fi network and:
+  * open shell in each device and type `hostname -I`; the IP address that the shell will give will be used after;
+* from another hell open the `.bashrc` in both devices by the command `gedit ~/.bashrc` and:
+  * for ROS1:
+    * sourcing the ROS1 by `source /opt/ros/noetic/setup.bash`;
+    * export the ROS1 IP address by `export ROS_IP=IP_address`;
+  * for ROS2:
+    * sourcing the ROS2 by `source /opt/ros/galactic/setup.bash`;
+    * exporting the IP address of the ROS1 device by `export ROS_MASTER_URI=http://IP_address:11311` where the 11311 is the ROS port;
+    * export the ROS2 IP address by `export ROS_IP=IP_address`.
