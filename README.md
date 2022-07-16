@@ -90,4 +90,4 @@ In order to connect two devices, one running ROS1 and another running ROS2 we ha
     * exporting the IP address of the ROS1 device by `export ROS_MASTER_URI=http://IP_address:11311` where the 11311 is the ROS port;
     * export the ROS2 IP address by `export ROS_IP=IP_address`.
 
-In case the ROS1 devices is a robot, so we cannot access directly its shell it is just sufficient to set the ROS2 device as explained before and starting the ROS bridge to start the communication.
+In case the ROS1 devices is a robot, so we cannot access directly its shell it is just sufficient to set the ROS2 device as explained before (the ROS_MASTER_URI can be taken from the Wi-Fi IP list) and starting the ROS bridge to start the communication.
