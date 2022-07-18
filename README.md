@@ -91,3 +91,9 @@ In order to connect two devices, one running ROS1 and another running ROS2 we ha
     * export the ROS2 IP address by `export ROS_IP=IP_address`.
 
 In case the ROS1 devices is a robot, so we cannot access directly its shell it is just sufficient to set the ROS2 device as explained before (the ROS_MASTER_URI can be taken from the Wi-Fi IP list) and starting the ROS bridge to start the communication.
+
+## <img src="https://user-images.githubusercontent.com/62358773/179535296-ef4fc86d-8400-48d4-ac70-43f5a7643801.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Parameters
+
+In order to run the parameter file from command line as soon as the rosbridge is launched we need to do: </br>
+`ros2 run pkg_name node_name --ros-args --params-file ~path_to_file/params.yaml`
+
