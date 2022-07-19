@@ -8,17 +8,22 @@ Need to install:
 ## Comment the sources of the `.bashrc` file
 Before starting we need to comment the `source` default command set in the `.bashrc` file. </br>
 Follow these steps:
-* `cd ~/.bashrc`;
+```
+cd ~/.bashrc
+```
+
 * comment all the sources commands.
 
 Then we need to install and build the ROS bridge repository. Before this we need to make a new workspace for the bridge. </br>
 Follow these steps:
-* `mkdir -p ~/ros_ws_bridge/src`;
-* `cd ~/ros_ws_bridge/src`;
-* `git clone https://github.com/ros2/ros1_bridge.git` to clone the entire repository;
-* `cd ros1_bridge`
-* `git checkout galactic` to switch to the galactic branch;
-* `cd ~/ros_ws_bridge`;
+```
+mkdir -p ~/ros_ws_bridge/src
+cd ~/ros_ws_bridge/src`
+git clone https://github.com/ros2/ros1_bridge.git` to clone the entire repository
+cd ros1_bridge
+git checkout galactic` to switch to the galactic branch
+cd ~/ros_ws_bridge
+```
 
 ### Prerequisites
 
@@ -49,19 +54,27 @@ To run the following examples you will also need these ROS 1 packages:
 
 ## Build the bridge from source
 We firstly need to source the ROS2 with:
-* `source /opt/ros/galactic/setup.bash`;
+```
+source /opt/ros/galactic/setup.bash
+```
 
 Now we have to install all the requirements without the ROS bridge by </br>
-* `colcon build --symlink-install --packages-skip ros1_bridge`
+```
+colcon build --symlink-install --packages-skip ros1_bridge
+```
 
 Open another shell in the same folder as before (type `cd ~/ros_ws_bridge`). </br>
 Then we source the ROS1 and ROS2 with these commands:
-* `source /opt/ros/noetic/setup.bash`;
-* `source /opt/ros/galactic/setup.bash`;
-* `source install/local_setup.bash`.
+```
+source /opt/ros/noetic/setup.bash
+source /opt/ros/galactic/setup.bash
+source install/local_setup.bash
+```
 
 Now we start the building of the repository by: </br>
-* `colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure`
+```
+colcon build --symlink-install --packages-select ros1_bridge --cmake-force-configure
+```
 
 ## <img src="https://user-images.githubusercontent.com/62358773/175919787-96dfd662-af73-4ab6-a6ad-e7049ff1336e.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Run the ROS Bridge
 * Shell A:
