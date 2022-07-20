@@ -96,10 +96,16 @@ In order to connect two devices, one running ROS1 and another running ROS2 we ha
   * open shell in each device and type `hostname -I`; the IP address that the shell will give will be used after;
 * from another hell open the `.bashrc` in both devices by the command `gedit ~/.bashrc` and:
   * for ROS1:
-    * sourcing the ROS1 by `source /opt/ros/noetic/setup.bash`;
+    * sourcing the ROS1 by 
+    ```
+    source /opt/ros/noetic/setup.bash
+    ```
     * export the ROS1 IP address by `export ROS_IP=IP_address`;
   * for ROS2:
-    * sourcing the ROS2 by `source /opt/ros/galactic/setup.bash`;
+    * sourcing the ROS2 by 
+    ```
+    source /opt/ros/galactic/setup.bash
+    ```
     * exporting the IP address of the ROS1 device by `export ROS_MASTER_URI=http://IP_address:11311` where the 11311 is the ROS port;
     * export the ROS2 IP address by `export ROS_IP=IP_address`.
 
@@ -108,5 +114,7 @@ In case the ROS1 devices is a robot, so we cannot access directly its shell it i
 ## <img src="https://user-images.githubusercontent.com/62358773/179535296-ef4fc86d-8400-48d4-ac70-43f5a7643801.png" width="5%" height="5%">&nbsp;&nbsp;&nbsp;Parameters
 
 In order to run the parameter file from command line as soon as the rosbridge is launched we need to do: </br>
-`ros2 run pkg_name node_name --ros-args --params-file ~path_to_file/params.yaml`
+```
+ros2 run pkg_name node_name --ros-args --params-file ~path_to_file/params.yaml
+```
 
