@@ -1,8 +1,0 @@
-prefix=/home/teo/ros_ws/install
-
-Name: ros1_tiago
-Description: Description of ros1_tiago
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
