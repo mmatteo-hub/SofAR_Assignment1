@@ -54,7 +54,9 @@ class BasicNavigator(Node):
         self.status = None
 
         amcl_pose_qos = QoSProfile(
-          durability=QoSDurabilityPolicy.TRANSIENT_LOCAL,
+          #TODO Tiago changing durability from "TRANSIENT_LOCAL" to "VOLATILE"
+          #It is now necessary that the navigator is started before setting the initial pose
+          durability=QoSDurabilityPolicy.VOLATILE,
           reliability=QoSReliabilityPolicy.RELIABLE,
           history=QoSHistoryPolicy.KEEP_LAST,
           depth=1)
@@ -275,7 +277,9 @@ class BasicNavigator(Node):
 
     def waitUntilNav2Active(self, navigator='bt_navigator', localizer='amcl'):
         """Block until the full navigation system is up and running."""
-        self._waitForNodeToActivate(localizer)
+        # TODO now using Tiago with ROS2, the amcl is different from the one in ROS1
+        # because it does not have a /get_state service. So, just do not wait for it.
+        #self._waitForNodeToActivate(localizer)
         if localizer == 'amcl':
             self._waitForInitialPose()
         self._waitForNodeToActivate(navigator)
