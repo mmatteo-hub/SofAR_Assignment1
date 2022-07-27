@@ -54,9 +54,7 @@ class BasicNavigator(Node):
         self.status = None
 
         amcl_pose_qos = QoSProfile(
-          #TODO Tiago changing durability from "TRANSIENT_LOCAL" to "VOLATILE"
-          #It is now necessary that the navigator is started before setting the initial pose
-          durability=QoSDurabilityPolicy.VOLATILE,
+          durability=QoSDurabilityPolicy.TRANSIENT_LOCAL,
           reliability=QoSReliabilityPolicy.RELIABLE,
           history=QoSHistoryPolicy.KEEP_LAST,
           depth=1)
