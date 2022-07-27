@@ -1,4 +1,4 @@
-# Software Architectures for Robotics (ROS2): Assignment
+# Software Architectures for Robotics: Assignment (ROS2 part)
 
 <img src="https://user-images.githubusercontent.com/62358773/158238820-f418cc09-4227-4afc-9c31-1705dfb64f5a.png" width="5%" height="5%"> Professor: [Simone Macciò](https://github.com/SimoneMacci0)
 
