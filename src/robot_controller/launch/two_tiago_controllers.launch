@@ -1,0 +1,21 @@
+<launch>
+	
+	<node name="tiago1_controller" pkg="robot_controller" type="robot_controller.py" output="screen">
+		<param name="initial_pose" value="[-2.2, -4.2, 0.0, 0.0, 0.0, 0.0, 1.0]" />
+		<param name="goal_pose"    value="[-3.8, +1.8, 0.0, 0.0, 0.0, 0.0, 1.0]" />
+		<remap from="reached_goal" to="tiago1/reached_goal" />
+		<remap from="other_reached_goal" to="tiago2/reached_goal" />
+		<remap from="toggle_wait" to="tiago1/toggle_wait" />
+		<remap from="move_base" to="tiago1/move_base" />
+	</node>
+
+	<node name="tiago2_controller" pkg="robot_controller" type="robot_controller.py" output="screen">
+		<param name="initial_pose" value="[-6.2, -2.2, 0.0, 0.0, 0.0, 0.0, 1.0]" />
+		<param name="goal_pose"    value="[+0.0, +0.0, 0.0, 0.0, 0.0, 0.0, 1.0]" />
+		<remap from="reached_goal" to="tiago2/reached_goal" />
+		<remap from="other_reached_goal" to="tiago1/reached_goal" />
+		<remap from="toggle_wait" to="tiago2/toggle_wait" />
+		<remap from="move_base" to="tiago2/move_base" />
+	</node>
+
+</launch>

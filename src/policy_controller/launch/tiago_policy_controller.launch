@@ -1,0 +1,9 @@
+<launch>
+	<node name="tiago_policy_controller" pkg="policy_controller" type="policy_controller.py" output="screen">
+		<param name="robot_names" value="[tiago1, tiago2]" />
+		<remap from="tiago1/global_path" to="tiago1/move_base/GlobalPlanner/plan" />
+		<remap from="tiago2/global_path" to="tiago2/move_base/GlobalPlanner/plan" />
+		<remap from="tiago1/odom" to="tiago1/robot_pose" />
+		<remap from="tiago2/odom" to="tiago2/robot_pose" />
+	</node>
+</launch>
